@@ -231,7 +231,7 @@ function passwordChangePopEvet(){
 
    const passwordPopOpenBtn = document.querySelector(".passwordPopOpenBtn");
    const passwordPopWrappers = document.getElementById("passwordPopWrappers");
-   let passwordPopHtmlFilePath = '/src/components/popUp/passwordPop.html'; 
+   let passwordPopHtmlFilePath = '/iss/src/components/popUp/passwordPop.html'; 
  
    if(passwordPopOpenBtn){
  
@@ -301,7 +301,7 @@ function addUserPopEvet(){
 
    const addUserBtn = document.querySelector(".addUserBtn");
    const addUserPopWrappers = document.getElementById("addUserPopWrappers");
-   let addUserPopHtmlFilePath = '/src/components/popUp/addUserPop.html'; 
+   let addUserPopHtmlFilePath = '/iss/src/components/popUp/addUserPop.html'; 
  
    if(addUserBtn){
  

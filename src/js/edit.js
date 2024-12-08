@@ -165,7 +165,7 @@ function editSavePopEvet(){
 
    const editSaveBtn = document.querySelector(".editContMainSaveBtnBoxs .editSaveBtn");
    const editSavePopWrappers = document.getElementById("layoutSavePopWrappers");
-   let editPopHtmlFilePath = '/src/components/popUp/layoutPop.html'; 
+   let editPopHtmlFilePath = '/iss/src/components/popUp/layoutPop.html'; 
 
    if(editSaveBtn){
 

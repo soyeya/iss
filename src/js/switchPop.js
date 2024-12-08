@@ -1,7 +1,7 @@
 const switchPopEvet = () => {
    
    let switchWrapper = document.getElementById("switchPopWrappers");
-   let switchHtmlFilePath = '/src/components/popUp/switchPop.html'; // 삽입할 HTML 파일 경로
+   let switchHtmlFilePath = '/iss/src/components/popUp/switchPop.html'; // 삽입할 HTML 파일 경로
 
    if(switchWrapper){
 

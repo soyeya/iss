@@ -1,7 +1,7 @@
 const navigationEvet = () => {
    
     let ssNavi = document.querySelector(".navigationWrappers");
-    let naviHtmlFilePath = '/navigation.html'; // 삽입할 HTML 파일 경로
+    let naviHtmlFilePath = '/iss/navigation.html'; // 삽입할 HTML 파일 경로
  
     if(ssNavi){
  

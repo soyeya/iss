@@ -21,7 +21,7 @@ function emailCheckPopEvet(){
 
     const emailCheckBtn = document.querySelector(".emailCheckBtn");
     const loginEmailCheckWrappers = document.getElementById("loginEmailCheckWrappers");
-    let loginPopHtmlFilePath = '/src/components/popUp/loginPop.html'; 
+    let loginPopHtmlFilePath = '/iss/src/components/popUp/loginPop.html'; 
 
     if(emailCheckBtn){
 

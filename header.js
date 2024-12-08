@@ -1,7 +1,7 @@
 const headerEvet = () => {
    
     let ssHeader = document.querySelector(".headerWrappers");
-    let htmlFilePath = '/header.html'; // 삽입할 HTML 파일 경로
+    let htmlFilePath = '/iss/header.html'; // 삽입할 HTML 파일 경로
  
     if(ssHeader){
  

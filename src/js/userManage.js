@@ -154,7 +154,7 @@ function userGroupPopEvet(){
 
   const userPopOpenBtn = document.querySelector(".userPopOpenBtn");
   const userGroupAddWrappers = document.getElementById("userGroupAddWrappers");
-  let userGroupPopHtmlFilePath = '/src/components/popUp/userGroupPop.html'; 
+  let userGroupPopHtmlFilePath = '/iss/src/components/popUp/userGroupPop.html'; 
 
   if(userPopOpenBtn){
 

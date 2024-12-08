@@ -1,7 +1,7 @@
 const bottomMentEvet = () => {
    
    let bottomMenuWrap = document.querySelector(".bottomMenuWrappers");
-   let bottomMenuhtmlFilePath = '/bottomMenu.html'; // 삽입할 HTML 파일 경로
+   let bottomMenuhtmlFilePath = '/iss/bottomMenu.html'; // 삽입할 HTML 파일 경로
 
    if(bottomMenuWrap){
 

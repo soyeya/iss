@@ -41,7 +41,7 @@ const issuesBoxDatasEvet = () => {
         <div class="issuesStateCont">
              <div class="titles">
                 <ul>
-                   <span class="icons" style="background-image: url('/src/assets/media/issuesState/icons/${dataTitlesArray.icons[i]}')"></span><h5>${dataTitlesArray.titles[i]}</h5>
+                   <span class="icons" style="background-image: url('/iss/src/assets/media/issuesState/icons/${dataTitlesArray.icons[i]}')"></span><h5>${dataTitlesArray.titles[i]}</h5>
                 </ul>
                 <ul class="btnBoxs">
                   <button class="issueInfoBtn01"></button>

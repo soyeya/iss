@@ -41,7 +41,7 @@ function customSavePopEvet(){
 
    const customSaveBtn = document.querySelector(".customSaveBtn");
    const customSavePopWrappers = document.getElementById("customSavePopWrappers");
-   let customPopHtmlFilePath = '/src/components/popUp/setupPop.html'; 
+   let customPopHtmlFilePath = '/iss/src/components/popUp/setupPop.html'; 
 
    if(customSaveBtn){
 
