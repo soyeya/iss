@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" /> -->
+   <link rel="stylesheet" href="/src/assets/css/style.css">
+   <title>S&S Cruiser</title>
+</head>
+<body>
+   <div class="navigationWrappers"></div>
+   <div class="headerWrappers"></div>
+   <div class="loginPopWrappers">
+      <section class="loginResizeWrap">
+      <div class="loginPopWrap">
+         <div class="loginContBoxs loginPopSpace">
+            <ul>
+               <span class="logo"></span>
+               <h3>Login</h3>
+               <p>로그인</p>
+            </ul>
+            <ul class="loginFormBoxs">
+               <form>
+                  <li>
+                     <label for="loginId">ID</label>
+                     <input type="text" id="loginId" placeholder="아이디를 입력해주세요" required>
+                  </li>
+                  <li>
+                     <label for="loginPassword">Password</label>
+                     <input type="password"  id="loginPassword" placeholder="비밀번호를 입력해주세요" required>
+                  </li>
+               </form>
+                <button type="button" class="findPassword">비밀번호를 잃어버리셨나요?</button>
+               <button type="submit" class="colorBtn">Login</button>
+            </ul>
+         </div>
+         <div class="forgotPasswordBoxs loginPopSpace">
+            <ul>
+               <span class="logo"></span>
+               <h3>Forgot Password?</h3>
+               <p>비밀번호 재설정</p>
+            </ul>
+            <ul class="loginFormBoxs">
+               <form>
+                  <li>
+                     <label for="findId">ID</label>
+                     <input type="text" id="findId" placeholder="아이디를 입력해주세요" required>
+                  </li>
+                  <li>
+                     <label for="findEmail">E-mail</label>
+                     <input type="email" id="findEmail" placeholder="이메일을 입력해주세요" required>
+                  </li>
+               </form>
+               <button type="button" class="colorBtn emailCheckBtn">확인</button>
+            </ul>
+
+         </div>
+      </div>
+   </section>
+   </div>
+   <div id="loginEmailCheckWrappers"></div>
+   <script type="module" src="/index.js"></script>
+   <script src="/src/js/login.js"></script>
+</body>
+</html>

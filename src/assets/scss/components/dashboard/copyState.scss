@@ -1,0 +1,719 @@
+body{
+
+
+#copyStateWrappers{
+
+   width: calc(100% - 10px);
+   padding:0px 5px;
+   height: 100%;
+   margin:0 auto;
+   background-color: $backgroundColor-2325;
+   
+   &::-webkit-scrollbar{ display: none;}
+   &::-moz-scrollbar{ display: none;}
+
+   .copyStateContentWrap{
+
+      padding:58px 0px 0px 70px;
+      height: calc(100% - 58px);
+
+      .copyStateContBoxs{
+
+         height: calc(100% - 40px);
+         border:1px solid #686868;
+         display: flex;
+         align-items: center;
+         border-radius: 10px;
+         background-image: $dottedBackGradient;
+         -webkit-background-image: $dottedBackGradient;
+         position: relative;
+
+         &::before{
+            content: "";
+            width:100%;
+            height:100%;
+            position: absolute;
+            top:0;
+            left:0;
+            background-image: url(/src/assets/media/dottedBack.svg);
+            -webkit-background-image: url(/src/assets/media/dottedBack.svg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 50%;
+         }
+
+         &::after{
+            content: "";
+            width:calc(100% / 5.2);
+            height:1px;
+            position: absolute;
+            top:-1.2px;
+            left:calc(100% / 2.4);
+            background-image: $border-linear;
+            -webkit-background-image:$border-linear;
+     
+         }
+         
+         .copyBoxs{
+
+             flex:1;
+             height:100%;
+             border-right: 1px solid #424242;
+             position: relative;
+             overflow: hidden;
+        
+            &:nth-child(1){
+               .copyBoxsTitles{
+                  border-top-left-radius: 10px;
+               }
+            }
+            &:nth-child(3){
+               border-right: none;
+               .copyBoxsTitles{
+                  border-top-right-radius: 10px;
+               }
+            }
+             .copyBoxsTitles{
+
+               width: calc(100% - 40px);
+               padding:0px 20px;
+               height: 30px;
+               background-color: rgba(97, 97, 97,0.3);
+               display: flex;
+               align-items: center;
+
+               h3{
+
+                   color:$fontColor-f;
+                   font-weight: $fontWeight-400;
+                   font-size: $fontSize-13;
+                   letter-spacing: $letterSpace-2;
+               }
+
+
+             }
+
+             
+         .storageBoxWrappers{
+
+             width:calc(100% - 54px);
+             height:calc(100% - 90px);
+             padding:45px 27px 0px;
+             margin:0 auto;
+             text-align: center;
+             overflow-y: auto;
+             overflow-x: auto;
+
+             &::-webkit-scrollbar{ width: 2px; height:2px;}
+             &::-webkit-scrollbar-thumb{
+                 height: 10px!important;
+                 border-radius: 10px;
+                 background-color: #D9D9D9;
+             }
+             &::-webkit-scrollbar-button:vertical:start:decrement{
+                 display: block;
+                 height: 20px;
+             }
+             &::-webkit-scrollbar-button:vertical:start:increment{
+                 display: block;
+                 height: 20px;
+             }
+             &::-webkit-scrollbar-button:vertical:end:decrement {
+                 display: block;
+                 height: 5px;
+             }
+             &::-moz-scrollbar{ width: 2px; height:2px;}
+             &::-moz-scrollbar-thumb{
+               height: 10px!important;
+               border-radius: 10px;
+               background-color: #D9D9D9;
+             }
+             &::-moz-scrollbar-button:vertical:start:decrement{
+               display: block;
+               height: 20px;
+             }
+             &::-moz-scrollbar-button:vertical:start:increment{
+                  display: block;
+                  height: 20px;
+             }
+             &::-moz-scrollbar-button:vertical:end:decrement {
+                  display: block;
+                  height: 5px;
+             }
+
+         .storageBox{
+
+                width:236px;
+                border-radius: 10px;
+                background-image: $dottedBackGradient;
+                -webkit-background-image: $dottedBackGradient;
+                border:1px solid transparent;
+                margin: 0 auto;
+                overflow: hidden;
+                float:left;
+                margin:20px;
+
+               &.storage-blue{ border:$border-blue;}
+               &.storage-green{ border:$border-green;}
+
+         .storageBoxTitles{
+
+               width:calc(100% - 34px);
+               height:32px;
+               padding:0px 17px;
+               background-color: transparent;
+               display: flex;
+               align-items: center;
+
+               &.title-blue{ background-color: $backgroundColor-blue;}
+               &.title-green{ background-color: $backgroundColor-green;}
+
+               h3{
+               color:$fontColor-d1;
+               font-weight: $fontWeight-400;
+               font-size: $fontSize-13;
+               letter-spacing: $letterSpace-2;
+               position: relative;
+               padding-left:21px;
+
+               &::before{
+
+                  width: 15px;
+                  height: 15px;
+                  content: "";
+                  position: absolute;
+                  left:0;
+                  top:0;
+                  background-position: center center;
+                  background-repeat: no-repeat;
+                  background-size: 15px 15px;
+               }
+
+               &.stor-blue::before{ 
+                  background-image: url(/src/assets/media/copyState/stor-blue.svg);
+                  -webkit-background-image: url(/src/assets/media/copyState/stor-blue.svg);
+               }
+               &.stor-green::before{ 
+                  background-image: url(/src/assets/media/copyState/stor-green.svg);
+                  -webkit-background-image: url(/src/assets/media/copyState/stor-green.svg);
+               }
+
+               }
+         }
+
+               .storageBoxDatas{
+
+                  width:calc(100% - 20px);
+                  padding:10px;
+                  margin:0 auto;
+                  display: flex;
+                  flex-wrap:wrap;
+                  gap:10px;
+                  
+
+                   ul{
+     
+                      background-color: #373639;
+                      border-radius: 5px;
+                      border:$border-list-blue;
+                      display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                      justify-content: center;
+                      gap:5px;
+                      width:calc(50% - 18px);
+                      height:calc(97px - 10px);
+                      padding:5px;
+                        
+                      li{
+
+                         width: 100%;
+                         display: flex;
+                         align-items: center;
+                         justify-content: center;
+                         border-radius: 3px;
+                         height:18px;
+
+                         &.data-blue{
+                           background-image: $list-data-blue;
+                           -webkit-background-image: $list-data-blue;
+                        }
+                         &.data-yellow{
+                           background-image: $list-data-yellow;
+                           -webkit-background-image: $list-data-yellow;
+                        }
+                         &.data-purple{ 
+                           background-image: $list-data-purple;
+                           -webkit-background-image: $list-data-purple;
+                        }
+                         &.data-green{ 
+                           background-image: $list-data-green;
+                           -webkit-background-image: $list-data-green;
+                        }
+                         &.data-orange{ 
+                           background-image: $list-data-orange;
+                           -webkit-background-image: $list-data-orange;
+                        }
+                         &.data-lightYellow{ 
+                           background-image: $list-data-lightYellow;
+                           -webkit-background-image: $list-data-lightYellow;
+                        }
+                         &.data-lightPurple{ 
+                           background-image: $list-data-lightPurple;
+                           -webkit-background-image: $list-data-lightPurple;
+                        }
+                         &.data-lightGreen{ 
+                           background-image: $list-data-lightGreen;
+                           -webkit-background-image: $list-data-lightGreen;
+                        }
+                         &.data-deepBlue{ 
+                           background-image: $list-data-deepBlue;
+                           -webkit-background-image: $list-data-deepBlue;
+                        }
+                         &.data-deepPurple{ 
+                           background-image: $list-data-deepPurple;
+                           -webkit-background-image: $list-data-deepPurple;
+                        }
+                         &.data-deepGreen{ 
+                           background-image: $list-data-deepGreen;
+                           -webkit-background-image: $list-data-deepGreen;
+                        }
+
+                         p{
+                           color:$fontColor-f;
+                           font-weight: $fontWeight-400;
+                           font-size: $fontSize-11;
+                           letter-spacing: $letterSpace-2;
+
+                         }
+
+                      }
+                   }
+               }
+            }
+        }
+ 
+   }      
+         .copyStateInfoBoxs{
+
+            position: fixed;
+            z-index:9999;
+            right:63px;
+            bottom:60px;
+            width:304px;
+            height:154px;
+            border-radius: 9px;
+            background-image: linear-gradient(#383339 0%, #121213 40% 100%);
+            -webkit-background-image: linear-gradient(#38333952 0%, #12121366 100%);
+            border: 1px solid #686868;
+
+            &::after{
+
+               content: "";
+               width:calc(100% / 3.54);
+               height:1px;
+               position: absolute;
+               top:-1px;
+               left:calc(100% / 2.75);
+               background-image: $border-linear;
+               -webkit-background-image:$border-linear;
+
+
+             }
+
+         .copyStateInfoBoxsTitleBoxs{
+             
+            width: calc(100% - 24px);
+            padding:0px 12px;
+            height: 29px;
+            background-color: #2E2E2F;
+            backdrop-filter: blur(30px);
+            -webkit-backdrop-filter: blur(30px);
+            display: flex;
+            align-items: center;
+            border-top-left-radius: 9px;
+            border-top-right-radius: 9px;
+
+             h3{
+               color:$fontColor-d1;
+               font-weight: $fontWeight-400;
+               font-size: $fontSize-13;
+               letter-spacing: $letterSpace-2;
+             }
+            
+         }
+         .copyStateInfoDatas{
+
+            height:calc(100% - 59px);
+            width: calc(100% - 32px);
+            padding:15px 16px;
+            display: flex;
+            align-items: center;
+
+            ul{
+
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+
+
+                li{
+
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  flex:1;
+
+                   p{
+
+                     color:$fontColor-d1;
+                     font-weight: $fontWeight-500;
+                     font-size: $fontSize-12;
+                     letter-spacing: $letterSpace-2;
+                     position: relative;
+                     padding-left:12px;
+
+                     &::before{
+
+                         content: "";
+                         position: absolute;
+                         left:0;
+                         top:40%;
+                         width:4px;
+                         height: 4px;
+                         border-radius: 50%;
+                         background-color: #0F98E6;
+
+                     }
+                   }
+
+                   span{
+                     color:$fontColor-d1;
+                     font-weight: $fontWeight-500;
+                     font-size: $fontSize-12;
+                     letter-spacing: $letterSpace-2;
+                     display: block;
+                     text-align: left;
+                     width:50%;
+                    
+                   }
+                }
+            }
+
+         }
+
+             
+         }
+         .plusBtnBoxs{
+
+            position: fixed;
+            right:20px;
+            bottom:60px;
+            z-index:9999;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap:8px;
+
+           button{
+
+             width: 34px;
+             height: 33px;
+             display: block;
+             border: 1px solid #68686833;
+             border-radius: 8px;
+             background-image: linear-gradient(#7C737366 0%, #39393966 100%);
+             -webkit-background-image: linear-gradient(#7C737366 0%, #39393966 100%);
+             position: relative;
+
+              &::after{
+
+                 content: "";
+                 position: absolute;
+                 left:0;
+                 top:0;
+                 width: 100%;
+                 height: 100%;
+                 background-position: center center;
+                 background-repeat: no-repeat;
+                 background-size: 30px 30px;
+              }
+
+              &:nth-child(1)::after{
+               background-image: url(/src/assets/media/toolsImg/plus.svg);
+               -webkit-background-image: url(/src/assets/media/toolsImg/plus.svg);
+              }
+              &:nth-child(2)::after{
+               background-image: url(/src/assets/media/toolsImg/minus.svg);
+               -webkit-background-image: url(/src/assets/media/toolsImg/minus.svg);
+              }
+
+           }
+       }
+
+      }
+
+      .copyAddMenus{
+
+          position: fixed;
+          top:111px;
+          right:26px;
+          z-index:9999;
+          display: flex;
+
+          .copyAddBtns{
+
+             display: flex;
+             justify-content: center;
+             
+
+             button{
+               width: 34px;
+               height: 33px;
+               display: block;
+               border: 1px solid rgba(104, 104, 104, 0.2);
+               border-radius: 8px;
+               background-image: linear-gradient(rgba(124, 115, 115, 0.4) 0%, rgba(57, 57, 57, 0.4) 100%);
+               -webkit-background-image: linear-gradient(rgba(124, 115, 115, 0.4) 0%, rgba(57, 57, 57, 0.4) 100%);
+               position: relative;
+
+               &::after{
+                  content: "";
+                  position: absolute;
+                  left: 0;
+                  top: 0;
+                  width: 100%;
+                  height: 100%;
+                  background-position: center center;
+                  background-repeat: no-repeat;
+                  background-size: 12px 12px;
+                  background-image: url(/src/assets/media/copyState/openMenu.svg);
+                  -webkit-background-image: url(/src/assets/media/copyState/openMenu.svg);
+               }
+
+               &.active::after{
+                  background-image: url(/src/assets/media/copyState/closeMenu.svg);
+                  -webkit-background-image: url(/src/assets/media/copyState/closeMenu.svg);
+               }
+             }
+          }
+
+          .copyHiddenMenus{
+
+             position: relative;
+             right:-26px;
+             top:0px;
+             width: 0px;
+             overflow: hidden;
+             transition: width 900ms;
+             
+             &::after{
+               content: "";
+               width:calc(100% / 1.51);
+               height:1px;
+               position: absolute;
+               top:0px;
+               left:calc(100% / 5.5);
+               background-image: $border-linear;
+               -webkit-background-image:$border-linear;
+               opacity: 0;
+            }
+
+             &.active{
+
+               width: calc(391px);
+               transition: width 800ms;
+               overflow: unset;
+
+             &::after{ opacity: 1; transition: opacity 2.5s;}
+
+             .copyHiddenMenusWrap{
+
+                 transform: translateX(0px);
+                 transition: transform 800ms;
+             }
+             
+             }
+             .copyHiddenMenusWrap{
+
+               width: calc(390px - 52px);
+               padding:23px 40px 0px 12px;
+               height:797px;
+               border-top-left-radius: 10px;
+               border-bottom-left-radius: 10px;
+               border: 1px solid #686868;
+               border-right: 0px;
+               background-image: $dottedBackGradient;
+               -webkit-background-image: $dottedBackGradient;
+               backdrop-filter: blur(30px);
+               -webkit-backdrop-filter: blur(30px);
+               transform: translateX(100%);
+               transition: transform 800ms;
+               overflow-y: scroll;
+                
+                 &::-webkit-scrollbar{ width: 2px;}
+                 &::-webkit-scrollbar-thumb{
+                     height: 10px!important;
+                     border-radius: 10px;
+                     background-color: #D9D9D9;
+                 }
+                 &::-webkit-scrollbar-button:vertical:start:decrement{
+                     display: block;
+                     height: 5px;
+                 }
+                 &::-webkit-scrollbar-button:vertical:start:increment{
+                     display: block;
+                     height: 5px;
+                 }
+                 &::-webkit-scrollbar-button:vertical:end:decrement {
+                     display: block;
+                     height: 5px;
+                 }
+                 &::-moz-scrollbar{ width: 2px;}
+                 &::-moz-scrollbar-thumb{
+                     height: 10px!important;
+                     border-radius: 10px;
+                     background-color: #D9D9D9;
+                 }
+                 &::-moz-scrollbar-button:vertical:start:decrement{
+                     display: block;
+                     height: 5px;
+                 }
+                 &::-moz-scrollbar-button:vertical:start:increment{
+                     display: block;
+                     height: 5px;
+                 }
+                 &::-moz-scrollbar-button:vertical:end:decrement {
+                     display: block;
+                     height: 5px;
+                 }
+
+                 h3{
+ 
+                   font-size: $fontSize-16;
+                   color:$fontColor-f;
+                   font-weight: $fontWeight-400;
+                   letter-spacing: $letterSpace-2;
+                   padding-bottom: 29px;
+                   padding-left: 9px;
+
+                 }
+
+                 .copyRadioBoxs{
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 100%;
+                    gap:10px;
+                    padding-bottom:10px;
+
+                    li{
+
+                      display: flex;
+                      width: 100%;
+
+                     input[type="radio"]{
+                         
+                        display: none;
+                        &:checked + label{
+                           border: 1px solid #0BA7FE;
+                           em{ &::before{ opacity: 1;}}
+                        }
+                     }
+
+                     label{
+                         
+                        width: calc(100% - 38px);
+                        padding:0px 25px;
+                        height: 50px;
+                        display: block;
+                        background-image: $dottedBackGradient;
+                        -webkit-background-image: $dottedBackGradient;
+                        backdrop-filter: blur(30px);
+                        -webkit-backdrop-filter: blur(30px);
+                        border-radius: 8px;
+                        border: 1px solid #686868;
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+
+                        &::after{
+                           content: "";
+                           width:calc(100% / 4.8);
+                           height:0.5px;
+                           border-radius: 0px;
+                           position: absolute;
+                           top:0px;
+                           left:calc(100% / 2.5);
+                           background-image:$border-linear-4041;
+                           -webkit-background-image:$border-linear-4041;
+                        }
+                      
+                        
+                        em{
+                           content: "";
+                           position: absolute;
+                           left:13px;
+                           top:35%;
+                           width: 12px;
+                           height: 12px;
+                           border-radius: 50%;
+                           background-color: transparent;
+                           border: 1px solid #fff;
+
+                           &::before{
+
+                               width: 6px;
+                               height: 6px;
+                               border-radius: 50%;
+                               background-color: #fff;
+                               content: "";
+                               position: absolute;
+                               left:3px;
+                               top:3px;
+                               opacity: 0;
+
+                           }
+                        }
+
+                        span{
+
+                           font-size: $fontSize-13;
+                           color:$fontColor-f;
+                           font-weight: $fontWeight-400;
+                           letter-spacing: $letterSpace-2;
+                           padding-left:10px;
+                        }
+
+
+                     }
+                    }
+                 }
+             }
+             
+          }
+      }
+   }
+
+   @include breakpoint(xxxlarge) {
+      .copyStateContentWrap {
+         .copyAddMenus{
+            .copyHiddenMenus{
+               .copyHiddenMenusWrap{
+                  .copyRadioBoxs{
+                     li{
+                        label{
+                         &::after{ height:1px;}
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+}

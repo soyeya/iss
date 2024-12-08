@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="/src/assets/css/style.css">
+</head>
+<body>
+   <div class="dataLodingPages">
+         <div class="loadingPercentCont"><em class="loadingNum">0</em></div>
+  </div>
+  <script type="module" src="/index.js"></script>
+  <script>
+   const percentEvet = () => {
+    const loadingPercentCont = document.querySelector(".loadingPercentCont");
+    const loadingNumber = document.querySelector(".loadingNum");
+
+    const loadingPercentContWidth = loadingPercentCont.offsetWidth;
+
+    if (loadingPercentCont) {
+        setTimeout(() => {
+            loadingPercentCont.classList.add("active");
+
+            let progress = 0; // 초기값 설정
+            const duration = 3000; // 3초 동안 애니메이션
+            const step = 1; //매번 증가할 값
+            const intervalTime = duration / 100; // 1% 증가하는 데 걸리는 시간
+
+            const interval = setInterval(() => {
+                progress += step;
+                const currentWidth = (loadingPercentContWidth * progress) / 100;
+                loadingNumber.textContent = `${progress}%`; // 텍스트로 표시
+
+                if (progress >= 100) {
+                    clearInterval(interval); // 100퍼센트시 애니메이션 종료
+                }
+            }, intervalTime);
+
+        }, 1000);
+    }
+};
+
+percentEvet();
+  </script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<div class="switchPopWrap">
+   <div class="switchPopContent">
+    <div class="switchPopBoxs">
+       <div class="titlesBoxs">
+          <h3>스위치 상세정보</h3>
+          <button type="button" class="switchCloseBtn"></button>
+       </div>
+       <div class="popContentBoxs">
+          <section class="statesBoxs">
+             <ul class="statePoint">
+                <li>비활성화</li>
+                <li>활성화</li>
+                <li>이상 상태</li>
+             </ul>
+             <ul class="btnWrappers">
+                <button type="button" class="pdfBtn"><span></span>PDF</button>
+                <button type="button" class="downBtn"><span></span>다운로드</button>
+             </ul>
+         </section>
+          <section class="dataContent">
+              <div class="dataBoxs"></div>
+          </section>
+          <section class="systemsInfoBoxs">
+              <div class="systemBtnBoxs">
+                 <button type="button" class="sysBtn">System</button>
+                 <button type="button" class="sysBtn">PoE<span>7</span></button>
+                 <button type="button" class="sysBtn">Port<span>2</span></button>
+              </div>
+               <div class="systemsDataInfo">
+                  <div class="systemDatas">
+                     <table>
+                        <tbody>
+                           <tr>
+                              <th>Status</th>
+                              <td>connected</td>
+                           </tr>
+                           <tr class="addRowsDatas">
+                              <th rowspan="2">ip address</th>
+                              <td class="addPoint">1d_30_3573 (vme.0)</td>
+                           </tr>
+                           <tr>
+                              <td class="addPoint">1d_30_3573 (vme.0)</td>
+                           </tr>
+                           <tr>
+                              <th>mist aps</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>wireless clients</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>total power draw</th>
+                              <td>31.40 w</td>
+                           </tr>
+                           <tr>
+                              <th>uptime</th>
+                              <td>16h 51m</td>
+                           </tr>
+                           <tr>
+                              <th>last seen</th>
+                              <td>02:14:33 PM, May 29</td>
+                           </tr>
+                           <tr>
+                              <th>last config</th>
+                              <td>12:16:16 PM, May 24</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div class="systemDatas">
+                     <table>
+                        <tbody>
+                           <tr>
+                              <th>Status2</th>
+                              <td>connected</td>
+                           </tr>
+                           <tr class="addRowsDatas">
+                              <th rowspan="2">ip address2</th>
+                              <td class="addPoint">1d_30_3573 (vme.0)</td>
+                           </tr>
+                           <tr>
+                              <td class="addPoint">1d_30_3573 (vme.0)</td>
+                           </tr>
+                           <tr>
+                              <th>mist aps2</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>wireless clients2</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>total power draw2</th>
+                              <td>31.40 w</td>
+                           </tr>
+                           <tr>
+                              <th>uptime2</th>
+                              <td>16h 51m</td>
+                           </tr>
+                           <tr>
+                              <th>last seen2</th>
+                              <td>02:14:33 PM, May 29</td>
+                           </tr>
+                           <tr>
+                              <th>last config2</th>
+                              <td>12:16:16 PM, May 24</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div class="systemDatas">
+                     <table>
+                        <tbody>
+                           <tr>
+                              <th>Status3</th>
+                              <td>connected</td>
+                           </tr>
+                           <tr class="addRowsDatas">
+                              <th rowspan="2">ip address3</th>
+                              <td class="addPoint">1d_30_3573 (vme.0)</td>
+                           </tr>
+                           <tr>
+                              <td class="addPoint">1d_30_3573 (vme.0)</td>
+                           </tr>
+                           <tr>
+                              <th>mist aps3</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>wireless clients3</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>total power draw3</th>
+                              <td>31.40 w</td>
+                           </tr>
+                           <tr>
+                              <th>uptime3</th>
+                              <td>16h 51m</td>
+                           </tr>
+                           <tr>
+                              <th>last seen3</th>
+                              <td>02:14:33 PM, May 29</td>
+                           </tr>
+                           <tr>
+                              <th>last config3</th>
+                              <td>12:16:16 PM, May 24</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+          </section>
+       </div>
+    </div>
+   </div>
+</div>
+<script>
+    
+
+    /* switch 시스템, PoE, Port버튼 클릭에 따른 아래 데이터 박스 오픈 이벤트 */
+
+     const switchBtnEvet = () => {
+     const switchDataBtns = document.querySelectorAll(".sysBtn");
+     const systemDatas = document.querySelectorAll(".systemDatas");
+
+     if(systemDatas && switchDataBtns){
+
+      switchDataBtns[0].classList.add("active"); //최초의값, System버튼오픈
+      systemDatas[0].classList.add("active"); //최초의값, 첫번째 systemDatas 오픈
+
+      switchDataBtns.forEach((btns, index) => {
+
+         btns.addEventListener("click" , () => {
+   
+            switchDataBtns.forEach((otherBtns) => otherBtns.classList.remove("active"));
+            systemDatas .forEach((otherBoxs) => otherBoxs.classList.remove("active"));
+            btns.classList.add("active");
+            systemDatas[index].classList.add("active");
+            
+         })
+      })
+
+   }
+
+}
+
+switchBtnEvet();
+
+
+const switchPopClose = () => {
+
+    const switchCloseBtn = document.querySelector(".switchCloseBtn");
+    const switchPopWrap = document.querySelector(".switchPopWrap");
+
+    if(switchCloseBtn){
+
+      switchCloseBtn.addEventListener("click", () => {
+          
+         switchPopWrap.classList.add("active");
+
+      })
+    }
+}
+
+switchPopClose();
+</script>

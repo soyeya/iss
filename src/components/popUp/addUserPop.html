@@ -1,0 +1,32 @@
+<div class="popCommonWrap addUserPopWrap">
+   <div class="popCommonFlexBox">
+   <div class="popCommonBoxs saveCommonBoxs">
+      <ul>
+          <span class="popCommonImgBoxs addUserCommonImg"></span>
+          <h5>사용자 그룹을 등록 하시겠습니까?</h5>
+      </ul>
+      <div class="saveCommonBtnBoxs">
+      <button type="button" class="addUserCloseBtn">취소</button>
+      <button type="button" class="addUserCloseBtn">등록</button>
+     </div>
+   </div>
+</div>
+</div>
+<script>
+    
+   //확인,등록버튼 클릭시, 팝업 닫히게 하기
+   const addUserCloseBtns = document.querySelectorAll(".addUserCloseBtn");
+   const addUserPopWraps = document.querySelector(".addUserPopWrap");
+
+   if(addUserCloseBtns){
+
+      addUserCloseBtns.forEach((btn) => {
+         
+         btn.addEventListener("click", () => {
+
+            addUserPopWraps.classList.remove("active");
+         })
+
+      })
+   }
+</script>

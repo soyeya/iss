@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" /> -->
+   <link rel="stylesheet" href="/src/assets/css/style.css">
+   <title>S&S Cruiser</title>
+</head>
+<body>
+   <div class="navigationWrappers"></div>
+   <div class="headerWrappers"></div>
+   <div id="toolsWrappers">
+      <div class="toolsContentWrap resizeWidth">
+        <div class="toolsContentBoxs">
+            <section class="contentTopBoxs">
+               <!--tool박스버튼영역-->
+               <div class="toolsBtnBoxs">
+                  <ul class="resetBoxs">
+                     <li><button type="button"></button></li>
+                     <li><button type="button"></button></li>
+                  </ul>
+                  <ul class="toolsBtnArrange">
+                     <li><button type="button" class="toolsBtn"></button></li>
+                     <li><button type="button" class="toolsBtn"></button></li>
+                     <li><button class="toolsBtn toolsOpenBtn"></button>
+                        <!--숨겨진 사이드 버튼 박스 영역-->
+                        <div class="toolsHiddenBoxs">
+                           <button type="button" class="toolsHidden">None</button>
+                           <button type="button" class="toolsHidden">Line arrow</button>
+                        </div>
+                     </li>
+                     <li><button type="button" class="toolsBtn"></button></li>
+                     <li><button type="button" class="toolsBtn"></button></li>
+                     <li><button type="button" class="toolsBtn"></button></li>
+                     <li><button type="button" class="toolsBtn"></button></li>
+                     <li><button type="button" class="toolsBtn"></button></li>
+                     <li><button class="toolsBtn toolsOpenBtn"></button>
+                        <!--숨겨진 사이드 버튼 박스 영역-->
+                        <div class="toolsHiddenBoxs toolsHiddenBoxs02">
+                           <button type="button" class="toolsHidden">Bring forward</button>
+                           <button type="button" class="toolsHidden">Bring to front</button>
+                           <button type="button" class="toolsHidden">Send backward</button>
+                           <button type="button" class="toolsHidden">Send to back</button>
+                        </div>
+                     </li>
+                     <li><button type="button" class="toolsBtn"></button></li>
+                  </ul>
+               </div>
+               <!--저장하기, 토글버튼영역-->
+               <div class="saveBtnBoxs">
+                  <button class="saveBtn">저장하기</button>
+                  <button class="toggleBtn"><span></span></button>
+               </div>
+            </section>
+            <!--자원목록 및 옵션, 메인스크린영역-->
+            <section class="contentMainBoxs">
+               <!--왼쪽 영역 (자원목록,옵션)-->
+               <article class="toolsOptionsSection">
+                  <div class="toggleBoxies">
+                     <ul>
+                         <button type="button">자원목록</button>
+                         <button type="button">옵션</button>
+                     </ul>
+                  </div>
+                  <div class="listOptionsBox">
+                      <div class="listOptionsSpace listSpace">
+                         <div class="listSearch listTitlesBoxs">
+                           <h5>자원목록 검색</h5>
+                           <div class="toolselectBoxsWrappers">
+                             <div class="toolListSelectWrap">
+                              <div class="toolListSelectBoxs">
+                                 <select name="" class="toolListHiddenSelect" id="toolListHiddenSelectBox01" hidden>
+                                    <option value="장비그룹명1">장비그룹명1</option>
+                                    <option value="장비그룹명2">장비그룹명2</option>
+                                    <option value="장비그룹명3">장비그룹명3</option>
+                                    <option value="장비그룹명4">장비그룹명4</option>
+                                    <option value="장비그룹명5">장비그룹명5</option>
+                                    <option value="장비그룹명6">장비그룹명6</option>
+                                    <option value="장비그룹명7">장비그룹명7</option>
+                                 </select>
+                                  <!--보여지는 셀렉박스-->
+                                 <div class="toolListSelects">
+                                 <button class="toolListSelectsTitleBtn toolGroups"></button>
+                                 <div class="toolListSelectList toolGroupList">
+                                     <ul class="toolListSelectListMember toolGroupMembers">
+                                     </ul>
+                                  </div>
+                                 </div><!--보여지는 셀렉박스-->
+                                </div>
+                             </div>
+                             <div class="toolListSelectWrap">
+                              <div class="toolListSelectBoxs">
+                                 <select name="" class="toolListHiddenSelect" id="toolListHiddenSelectBox02" hidden>
+                                    <option value="Switch">Switch</option>
+                                    <option value="Storage">Storage</option>
+                                    <option value="Das">Das</option>
+                                    <option value="Server">Server</option>
+                                    <option value="Nas">Nas</option>
+                                 </select>
+                                  <!--보여지는 셀렉박스-->
+                                 <div class="toolListSelects">
+                                 <button class="toolListSelectsTitleBtn filterBtn">필터설정<span>1</span></button>
+                                 <div class="toolListSelectList">
+                                     <ul class="toolListSelectListMember checkBoxsContent">
+                                      <li><input type="checkbox" id="filterCheck01"><label for="filterCheck01"><span></span>Switch</label></li>
+                                      <li><input type="checkbox" id="filterCheck02"><label for="filterCheck02"><span></span>Storage</label></li>
+                                      <li><input type="checkbox" id="filterCheck03"><label for="filterCheck03"><span></span>Das</label></li>
+                                      <li><input type="checkbox" id="filterCheck04"><label for="filterCheck04"><span></span>Server</label></li>
+                                      <li><input type="checkbox" id="filterCheck05"><label for="filterCheck05"><span></span>Nas</label></li>
+                                     </ul>
+                                  </div>
+                                 </div><!--보여지는 셀렉박스-->
+                                </div>
+                             </div>
+                             <div class="searchBoxs">
+                               <input type="search" placeholder="검색하기">
+                             </div>
+                           </div><!--toolselectBoxsWrappers-->
+                         </div><!--listSearch-->
+                         <div class="listSetup">
+                           <h5>자원 목록</h5>
+                           <ul>
+                              <li>
+                                 <button type="button" class="hg-01">HG-LEON01</button>
+                                 <button type="button" class="switch-01">SWITCH-01</button>
+                                 <button type="button" class="switch-01">SWITCH-01</button>
+                                 <button type="button" class="switch-01">SWITCH-01</button>
+                                 <button type="button" class="switch-01">SWITCH-01</button>
+                                 <button type="button" class="switch-01">SWITCH-01</button>
+                                 <button type="button" class="switch-01">SWITCH-01</button>
+                                 <button type="button" class="switch-01">SWITCH-01</button>
+                                 <button type="button" class="switch-01">SWITCH-01</button>
+                                 <button type="button" class="switch-01">SWITCH-01</button>
+                                 <button type="button" class="switch-01">SWITCH-01</button>
+                                 <button type="button" class="switch-01">SWITCH-01</button>
+                                 <button type="button" class="hg-01">HG-LEON01</button>
+
+                              </li>
+                           </ul>
+                         </div>
+                      </div>
+                      <div class="listOptionsSpace optionSpace">
+                        <div class="listTitlesBoxs">
+                           <h5>Size</h5>
+                           <div class="positionBoxs">
+                               <ul>
+                                 <li><span>Position</span>
+                                     <div class="valueInputBoxs">
+                                       <input type="text" placeholder="X">
+                                       <input type="text" placeholder="Y">
+                                     </div>
+                                 </li>
+                                  <li><span>Size</span>
+                                    <div class="valueInputBoxs">
+                                      <input type="text" placeholder="X">
+                                      <input type="text" placeholder="Y">
+                                    </div>
+                                </li>
+                               </ul>
+                           </div>
+                        </div>
+                        <div class="listTitlesBoxs">
+                           <h5>ICON</h5>
+                           <div class="iconArrayBoxs">
+                              <ul>
+                                 <li><button></button><em>SOFTWARE</em></li>
+                                 <li><button></button><em>SOFTWARE</em></li>
+                                 <li><button></button><em>SOFTWARE</em></li>
+                                 <li><button></button><em>SOFTWARE</em></li>
+                                 <li><button></button><em>SOFTWARE</em></li>
+                                 <li><button></button><em>SOFTWARE</em></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="listTitlesBoxs typeFaceBoxs">
+                           <h5>Typeface</h5>
+                           <div class="toolselectBoxsWrappers typefaceSelectBoxsWrappers">
+                           <div class="toolListSelectWrap">
+                              <div class="toolListSelectBoxs typefaceSelectBoxs01">
+                                 <select name="" class="toolListHiddenSelect" id="toolListHiddenSelectBox03" hidden>
+                                    <option value="Bold">Bold</option>
+                                    <option value="Semibold">Semibold</option>
+                                    <option value="Normal">Normal</option>
+                                    <option value="Thin">Thin</option>
+                                    <option value="Small">Small</option>
+                                 </select>
+                                  <!--보여지는 셀렉박스-->
+                                 <div class="toolListSelects typefaceSelects">
+                                 <button class="toolListSelectsTitleBtn typefaceSelectsTitleBtn"></button>
+                                 <div class="toolListSelectList typefaceSelectList">
+                                     <ul class="toolListSelectListMember typefaceSelectListMember"></ul>
+                                  </div>
+                                 </div><!--보여지는 셀렉박스-->
+
+                                </div><!--typefaceSelectBoxs01-->
+                             </div><!--toolListSelectWrap-->
+                             <div class="toolListSelectWrap">
+                              <div class="toolListSelectBoxs typefaceSelectBoxs02">
+                                 <select name="" class="toolListHiddenSelect" id="toolListHiddenSelectBox04" hidden>
+                                    <option value="10">10</option>
+                                    <option value="15">15</option>
+                                    <option value="20">20</option>
+                                    <option value="25">25</option>
+                                    <option value="30">30</option>
+                                    <option value="35">35</option>
+                                    <option value="40">40</option>
+                                 </select>
+                                  <!--보여지는 셀렉박스-->
+                                 <div class="toolListSelects typefaceSelects">
+                                 <button class="toolListSelectsTitleBtn typefaceSelectsTitleBtn"></button>
+                                 <div class="toolListSelectList typefaceSelectList">
+                                     <ul class="toolListSelectListMember typefaceSelectListMember"></ul>
+                                  </div>
+                                 </div><!--보여지는 셀렉박스-->
+
+                                </div><!--typefaceSelectBoxs02-->
+                             </div><!--toolListSelectWrap-->
+                             </div><!--toolselectBoxsWrappers-->
+                            <div class="typeFaceInputBoxs typeFaceInputRadioBoxs">
+                               <input type="radio" id="typeFaceRadio01" name="typeFaceRadio"><label for="typeFaceRadio01" class="typeRadioIcon01"></label>
+                               <input type="radio" id="typeFaceRadio02" name="typeFaceRadio"><label for="typeFaceRadio02" class="typeRadioIcon02"></label>
+                               <input type="radio" id="typeFaceRadio03" name="typeFaceRadio"><label for="typeFaceRadio03" class="typeRadioIcon03"></label>
+                               <input type="radio" id="typeFaceRadio04" name="typeFaceRadio"><label for="typeFaceRadio04" class="typeRadioIcon04"></label>
+                            </div>
+                            <div class="typeFaceInputBoxs typeFaceInputCheckBoxs">
+                              <input type="checkbox" id="typeFaceCheck01"><label for="typeFaceCheck01" class="typeTxtIcon01"></label>
+                              <input type="checkbox" id="typeFaceCheck02"><label for="typeFaceCheck02" class="typeTxtIcon02"></label>
+                              <input type="checkbox" id="typeFaceCheck03"><label for="typeFaceCheck03" class="typeTxtIcon03"></label>
+                              <input type="checkbox" id="typeFaceCheck04"><label for="typeFaceCheck04" class="typeTxtIcon04"></label>
+                              <input type="checkbox" id="typeFaceCheck05"><label for="typeFaceCheck05" class="typeTxtIcon05"></label>
+                           </div>
+                        </div>
+                        <div class="listTitlesBoxs styleControlBoxs">
+                           <h5>Style</h5>
+                           <div class="styleBoxs">
+                              <ul>
+                                 <li><span>Box</span>
+                                    <div class="inputColorBoxs">
+                                       <button class="colors"></button>
+                                       <!-- <input type="number" placeholder="50" min="0"> -->
+                                       <div class="number-input">
+                                          <input type="text" value="0" />
+                                          <div class="numBtnBoxs">
+                                          <button type="button" class="increase"></button>
+                                          <button type="button" class="decrease"></button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                 </li>
+                                 <li><span>Outline</span>
+                                    <div class="inputColorBoxs">
+                                       <button class="outlinesBtn colors"></button>
+                                       <!-- <input type="number" placeholder="2" min="0"> -->
+                                       <div class="number-input">
+                                          <input type="text" value="0" />
+                                          <div class="numBtnBoxs">
+                                             <button type="button" class="increase"></button>
+                                             <button type="button" class="decrease"></button>
+                                           </div>
+                                        </div>
+                                    </div>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+
+                      </div><!--optionSpace-->
+                  </div>
+               </article>
+               <!--메인스크린영역-->
+               <article class="toolsScreenSection">
+                   <div class="toolScreenBoxs">
+                      <div class="plusBtnBoxs">
+                        <button type="button"></button>
+                        <button type="button"></button>
+                      </div>
+
+                   </div>
+
+               </article>
+            </section>
+        </div>
+      </div>
+   </div>
+   <div id="toolsSavePopWrappers"></div>
+   <div class="bottomMenuWrappers"></div>
+   <script type="module" src="/index.js"></script>
+   <script src="/src/js/tools.js"></script>
+</body>
+</html>

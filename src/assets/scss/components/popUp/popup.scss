@@ -1,0 +1,210 @@
+.popCommonWrap{
+
+   position: fixed;
+   left:0;
+   top:0;
+   right:0;
+   bottom:0;
+   background-color: #2323258A;
+   z-index:999999999;
+   display: none;
+   
+   
+   &.active{
+
+       display:block;
+
+   }
+
+   .popCommonFlexBox{
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+
+   .popCommonBoxs{
+
+       width: calc(270px - 58px - 2px);
+       height: calc(244px - 60px - 2px);
+       padding:30px 29px;
+       margin:0 auto;
+       border-radius: 10px;
+       background-color: #68686838;
+       border: 1px solid rgba(255, 255, 255, 0.2);
+       backdrop-filter: blur(30px);
+       -webkit-backdrop-filter: blur(30px);
+
+        &.saveCommonBoxs{
+
+         width: calc(270px - 32px - 2px);
+         height: calc(218px - 54px - 2px);
+         padding:34px 16px 20px;
+         border: 1px solid #686868;
+         background-image: linear-gradient(#38333952 0%, #12121366 100%);
+         -webkit-background-image: linear-gradient(#38333952 0%, #12121366 100%);
+         position: relative;
+         background-color:unset;
+
+         &::after{
+
+            content: "";
+            width:calc(100% / 2.43);
+            height:1px;
+            position: absolute;
+            top:-1.2px;
+            left:calc(100% / 3.3);
+            background-image: $border-linear;
+            -webkit-background-image: $border-linear;
+         }
+
+        }
+
+        ul {
+
+         padding-bottom: 29px;
+
+         .popCommonImgBoxs{
+
+            width: 54px;
+            height: 54px;
+            background-image: url(/src/assets/media/login/emailColor.svg);
+            -webkit-background-image: url(/src/assets/media/login/emailColor.svg);
+            background-position: center center;
+            background-size: 24px 24px;
+            background-repeat: no-repeat;
+            display: block;
+            margin:0 auto;
+            border:1px solid #1194E3;
+            border-radius: 70px;
+
+
+            &.saveCommonImg{
+
+                position: relative;
+                background-image: linear-gradient(#2A2A2A4D 0%, #1A53764D 100%);
+                -webkit-background-image: linear-gradient(#2A2A2A4D 0%, #1A53764D 100%);
+                background-size: cover;
+
+
+               &::after{
+                  content: "";
+                  position: absolute;
+                  top:0;
+                  left:0;
+                  width: 100%;
+                  height: 100%;
+                  background-image: url(/src/assets/media/popUp/toolsSave.svg);
+                  -webkit-background-image: url(/src/assets/media/popUp/toolsSave.svg);
+                  background-size: 18px;
+                  background-position: center center;
+                  background-repeat: no-repeat;
+                }
+            }
+
+            &.passwordCommonImg{
+
+               position: relative;
+               background-image: linear-gradient(#2A2A2A4D 0%, #1A53764D 100%);
+               -webkit-background-image: linear-gradient(#2A2A2A4D 0%, #1A53764D 100%);
+               background-size: cover;
+
+
+
+               &::after{
+                  content: "";
+                  position: absolute;
+                  top:0;
+                  left:0;
+                  width: 100%;
+                  height: 100%;
+                  background-image: url(/src/assets/media/popUp/passwordImg.svg);
+                  -webkit-background-image: url(/src/assets/media/popUp/passwordImg.svg);
+                  background-size: 18px;
+                  background-position: center center;
+                  background-repeat: no-repeat;
+                }
+
+            }
+
+            &.addUserCommonImg{
+
+               position: relative;
+               background-image: linear-gradient(#2A2A2A4D 0%, #1A53764D 100%);
+               -webkit-background-image: linear-gradient(#2A2A2A4D 0%, #1A53764D 100%);
+               background-size: cover;
+
+               &::after{
+                  content: "";
+                  position: absolute;
+                  top:0;
+                  left:0;
+                  width: 100%;
+                  height: 100%;
+                  background-image: url(/src/assets/media/popUp/addUserImg.svg);
+                  -webkit-background-image: url(/src/assets/media/popUp/addUserImg.svg);
+                  background-size: 18px;
+                  background-position: center center;
+                  background-repeat: no-repeat;
+                }
+            }
+         }
+
+         h5{
+
+            font-size: $fontSize-14;
+            font-weight: $fontWeight-500;
+            color:$fontColor-f;
+            letter-spacing: $letterSpace-2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top:20px;
+            line-height: 21px;
+
+         }
+
+      }
+
+      button{
+
+         width: 100%;
+         height:40px;
+         display: block;
+         margin:0 auto;
+         border-radius: 8px;
+         background-image: linear-gradient(to left , #0F98E6 0 30%, #005B8F 100%);
+         -webkit-background-image: linear-gradient(to left , #0F98E6 0 30%, #005B8F 100%);
+         font-size: $fontSize-14;
+         font-weight: $fontWeight-400;
+         letter-spacing: $letterSpace-2;
+         color:$fontColor-f;
+
+      }
+      .saveCommonBtnBoxs{
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap:10px;
+
+          button{
+
+            width: 50%;
+            float: left;
+
+           &:nth-child(1){ 
+              background-image: linear-gradient(to left , #4D4B50 0%, #2F2E31 100%);
+              -webkit-background-image: linear-gradient(to left , #4D4B50 0%, #2F2E31 100%);
+
+           }
+         }
+   
+      }
+
+   }   
+
+ }
+}

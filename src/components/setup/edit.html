@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" /> -->
+   <link rel="stylesheet" href="/src/assets/css/style.css">
+   <title>S&S Cruiser</title>
+</head>
+<body>
+   <div class="navigationWrappers"></div>
+   <div class="headerWrappers"></div>
+   <div id="editWrappers">
+      <div class="editWrap resizeWidth">
+         <div class="editTitlesBox">
+            <a href="/src/components/setup/edit.html">대시보드 설정</a>
+            <a href="/src/components/setup/customizing.html">커스텀 설정</a>
+         </div>
+         <section class="editContBoxs">
+            <article class="editContMain">
+               <div class="editContMainTitles">
+                  <h3>대시보드 선택</h3>
+                  <!--숨겨진 셀렉박스-->
+                  <div class="editSelectWrappers">
+                  <select
+                     name=""
+                     id="editSelectBox01"
+                     hidden>
+                     <option value="저장할 대시보드를 선택해주세요">저장할 대시보드를 선택해주세요</option>
+                     <option value="저장할 대시보드를 선택해주세요2">저장할 대시보드를 선택해주세요2</option>
+                     <option value="저장할 대시보드를 선택해주세요3">저장할 대시보드를 선택해주세요3</option>
+                     <option value="저장할 대시보드를 선택해주세요4">저장할 대시보드를 선택해주세요4</option>
+                  </select>
+                  </div>
+                  <!--보여지는 셀렉박스-->
+                  <div class="editSelects">
+                  <button class="editSelectsTitleBtn editSelectBtn01"></button>
+                  <div class="editSelectList editSelectList01">
+                     <ul class="editSelectListMember editSelectMember01"></ul>
+                  </div>
+                  </div>
+               </div>
+               <div class="editContMainSaveBtnBoxs">
+                  <button class="editSaveBtn">대시보드 레이아웃 저장</button>
+               </div>
+               <div class="editContMainScreen">
+                   <div class="editScreenBoxs">
+                     <div class="editBoxs">
+                        <div class="editBoxsTitles">
+                           <ul class="editBoxsTitleSpace">
+                           <h5>타이틀</h5>
+                           <!--숨겨진 셀렉박스-->
+                           <div class="editSelectWrappers">
+                              <select
+                                 name=""
+                                 id="editScreenSelect01"
+                                 hidden>
+                                 <option value="연동할 시각화 종류 선택">연동할 시각화 종류 선택</option>
+                                 <option value="연동할 시각화 종류 선택2">연동할 시각화 종류 선택2</option>
+                                 <option value="연동할 시각화 종류 선택3">연동할 시각화 종류 선택3</option>
+                                 <option value="연동할 시각화 종류 선택4">연동할 시각화 종류 선택4</option>
+                              </select>
+                              </div>
+                              <!--보여지는 셀렉박스-->
+                            <div class="editSelects">
+                              <button class="editSelectsTitleBtn editSreenBtn"></button>
+                              <div class="editSelectList editSreenList">
+                                 <ul class="editSelectListMember editSreenMember"></ul>
+                              </div>
+                           </div>
+                           </ul>
+                           <ul class="editBoxsTitleSpace"><button class="editBoxCloseBtn"></button></ul>
+                        </div>
+                        <div class="editBoxDatas">
+                           <p class="nonData">연동화된 시각화 차트가 없습니다.</p>
+                        </div>
+                        <button class="editSizeBtn"></button>
+                     </div><!--editBoxs-->
+
+                  <div class="editBoxs">
+                     <div class="editBoxsTitles">
+                        <ul class="editBoxsTitleSpace">
+                        <h5>타이틀</h5>
+                        <!--숨겨진 셀렉박스-->
+                        <div class="editSelectWrappers">
+                           <select
+                              name=""
+                              id="editScreenSelect02"
+                              hidden>
+                              <option value="연동할 시각화 종류 선택">연동할 시각화 종류 선택f</option>
+                              <option value="연동할 시각화 종류 선택2f">연동할 시각화 종류 선택2f</option>
+                              <option value="연동할 시각화 종류 선택3f">연동할 시각화 종류 선택3f</option>
+                              <option value="연동할 시각화 종류 선택4f">연동할 시각화 종류 선택4f</option>
+                           </select>
+                           </div>
+                           <!--보여지는 셀렉박스-->
+                           <div class="editSelects">
+                           <button class="editSelectsTitleBtn editSreenBtn"></button>
+                           <div class="editSelectList editSreenList">
+                              <ul class="editSelectListMember editSreenMember"></ul>
+                           </div>
+                           </div>
+                        </ul>
+                        <ul class="editBoxsTitleSpace"><button class="editBoxCloseBtn"></button></ul>
+                     </div>
+                     <div class="editBoxDatas"></div>
+                     <button class="editSizeBtn"></button>
+                  </div><!--editBoxs-->
+
+                  </div>
+               </div>
+            </article>
+            <article class="editHiddenMenu">
+               <div class="editHiddenMenuBtnBox">
+                  <span>대시보드 카드 추가 메뉴</span>
+                  <button class="editHiddenBtn"></button>
+               </div>
+               <div class="editHiddenMenuList">
+                  <ul>
+                     <li><input type="radio" name="dashCardAdd" id="dashAddMenu01"><label for="dashAddMenu01"><span>장애현황</span></label></li>
+                     <li><input type="radio" name="dashCardAdd" id="dashAddMenu02"><label for="dashAddMenu02"><span>장애이력</span></label></li>
+                     <li><input type="radio" name="dashCardAdd" id="dashAddMenu03"><label for="dashAddMenu03"><span>응답속도</span></label></li>
+                     <li><input type="radio" name="dashCardAdd" id="dashAddMenu04"><label for="dashAddMenu04"><span>스토리지별 장애현황</span></label></li>
+                     <li><input type="radio" name="dashCardAdd" id="dashAddMenu05"><label for="dashAddMenu05"><span>Health Check</span></label></li>
+                  </ul>
+               </div>
+            </article>
+         </section>
+      </div>
+   </div>
+   <div id="layoutSavePopWrappers"></div>
+   <div class="bottomMenuWrappers"></div>
+   <script type="module" src="/index.js"></script>
+   <script src="/src/js/edit.js"></script>
+</body>
+</html>

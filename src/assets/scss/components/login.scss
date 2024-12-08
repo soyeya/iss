@@ -1,0 +1,296 @@
+.loginPopWrappers{
+
+    width: 100%;
+    height:100%;
+    margin:0 auto;
+    background-image: url(/src/assets/media/login/loginBackground.svg);
+    -webkit-background-image: url(/src/assets/media/login/loginBackground.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    overflow: auto;
+    position: relative;
+
+    &::after{
+
+      content: "";
+      background-image: url(/src/assets/media/dottedBack.svg);
+      -webkit-background-image: url(/src/assets/media/dottedBack.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left:0;
+      top:0;
+      opacity: 20%;
+
+    }
+
+    &::-webkit-scrollbar{ display: none;}
+    &::-moz-scrollbar{ display: none;}
+    
+    
+   .loginResizeWrap{
+      
+       padding: 50px 0px 0px 70px;
+       padding-top:12%;
+       margin: 0 auto;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       position: relative;
+       z-index:9999;
+
+   .loginPopWrap{
+
+      width:calc(510px - 132px);
+      height:calc(629px - 115px - 2px);
+      padding:57px 65px 58px;
+      border:1px solid #686868;
+      border-radius: 14px;
+      margin:0 auto;
+      background-image: linear-gradient(#5A5A5F52 0%,#20222466 100%);
+      -webkit-background-image: linear-gradient(#5A5A5F52 0%,#20222466 100%);
+      backdrop-filter: blur(30px);
+      -webkit-backdrop-filter: blur(30px);
+      position: relative;
+    
+        &::after{
+
+         content: "";
+         width:calc(100% / 1.72);
+         height:1px;
+         position: absolute;
+         top:-1px;
+         left:calc(100% / 4.8);
+         background-image: linear-gradient(90deg, #686868 0%, #B7B7B7 52%, #686868 100%);
+         -webkit-background-image: linear-gradient(90deg, #686868 0%, #B7B7B7 52%, #686868 100%);
+
+        }
+      .loginPopSpace{
+
+         margin:0 auto;
+
+
+         &.forgotPasswordBoxs{ display:none;}
+         &.forgotPasswordBoxs.active{ display:block;}
+         &.loginContBoxs.active{ display:none;}
+
+         ul{
+
+            width: 100%;
+
+            .logo{
+
+               width:85px;
+               height:99px;
+               background-image: url(/src/assets/media/commonLogo.svg);
+               -webkit-background-image: url(/src/assets/media/commonLogo.svg);
+               background-position: center center;
+               background-size: contain;
+               background-repeat: no-repeat;
+               display: block;
+               margin:0 auto;
+
+            }
+
+            h3{
+
+               color:$fontColor-f;
+               font-size: 40px;
+               font-weight: $fontWeight-500;
+               letter-spacing: $letterSpace-2;
+               padding:12px 0px;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+
+            }
+
+            p{
+
+               color:$fontColor-f;
+               font-size: $fontSize-14;
+               font-weight: $fontWeight-400;
+               letter-spacing: $letterSpace-2;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+            }
+
+            &.loginFormBoxs{
+
+                padding-top:39px;
+                margin:0 auto;
+
+                form{
+
+                  width: 100%;
+                  margin:0 auto;
+
+
+                  li{
+
+                     padding-bottom: 25px;
+
+                     &:last-child{ padding-bottom: 10px;}
+
+                     label{
+
+                        display: block;
+                        font-size: $fontSize-14;
+                        font-weight: $fontWeight-400;
+                        letter-spacing: $letterSpace-2;
+                        padding-bottom: 9px;
+                        color:$fontColor-f;
+                     }
+                     
+                      input{
+
+                        width: calc(100% - 70px);
+                        height:46px;
+                        padding:0px 35px;
+                        color:#8E8E8E;
+                        font-weight: $fontWeight-400;
+                        font-size: $fontSize-13;
+                        background-color: #373639;
+                        border-radius: 8px;
+                        border: 1px solid #686868;
+                        background-position: 14px center;
+                        background-size: 12px 12px;
+                        background-repeat: no-repeat;
+
+                      }
+
+                      input:focus{
+                        border-color:#0BA7FE;
+                        outline: none;
+                      }
+
+                      input[type="text"]{
+                        background-image: url(/src/assets/media/login/id.svg);
+                        -webkit-background-image: url(/src/assets/media/login/id.svg);
+                     }
+                      input[type="password"]{
+                        background-image: url(/src/assets/media/login/password.svg);
+                        -webkit-background-image: url(/src/assets/media/login/password.svg);
+                     }
+                      input[type="email"]{
+                        background-image: url(/src/assets/media/login/email.svg);
+                        -webkit-background-image: url(/src/assets/media/login/email.svg);
+                     }
+                  }
+                }
+
+                .findPassword{        
+                  
+                  color:$fontColor-f;
+                  font-size: $fontSize-11;
+                  font-weight: $fontWeight-300;
+                  letter-spacing: $letterSpace-2;
+                  display: block;
+                  text-align: right;
+                  width: 100%;
+                  position: relative;
+
+              
+
+                  &::before{
+
+                      content: "";
+                      background-image: url(/src/assets/media/login/findPassword.svg);
+                      -webkit-background-image: url(/src/assets/media/login/findPassword.svg);
+                      background-position: left center;
+                      background-size: 10px 10px;
+                      background-repeat: no-repeat;
+                      width: 11px;
+                      height: 11px;
+                      position: absolute;
+                      left:calc(100% - 140px);
+                      top:1px;
+                  }
+               }
+                .colorBtn{
+
+                   width: 100%;
+                   height:50px;
+                   display: block;
+                   margin:0 auto;
+                   border-radius: 8px;
+                   background-image: linear-gradient(to left , #0F98E6 0 30%, #005B8F 100%);
+                   -webkit-background-image: linear-gradient(to left , #0F98E6 0 30%, #005B8F 100%);
+                   font-size: $fontSize-14;
+                   font-weight: $fontWeight-400;
+                   letter-spacing: $letterSpace-2;
+                   color:$fontColor-f;
+                   margin-top: 40px;
+                }
+
+                
+            }
+         }
+      }
+   }
+
+ }
+
+ @include breakpoint(xxxlarge) {
+   .loginResizeWrap{
+      .loginPopWrap{
+          &::after{ height:-1.5px; top:-1.5px;}
+      }
+   }
+ }
+ 
+ @include breakpoint(large) {
+   
+   .loginResizeWrap{
+
+      padding-top:8%;
+
+      .loginPopWrap{
+
+          width:auto;
+          height:auto;
+
+          &::after{ top:-1px;}
+         
+         .loginPopSpace{
+
+            ul{
+
+            .logo{ height:8vh;}
+            h3{ font-size:4vh; }
+            p{ font-size: 2vh;}
+
+            &.loginFormBoxs{ padding-top:10px;
+                form{
+                  li{
+                     padding-bottom:15px;
+                     input{ height:6vh; font-size: 1.5vh; background-size: 1.5vh;}
+                     label{ font-size: 2vh;}
+                  }
+                }
+
+                .findPassword { font-size: 1.5vh;
+               
+                   &::before{ left: 0px; background-size: 1vh; top:calc(100% / 4);}
+                }
+                .colorBtn{ height:6vh;margin-top: 10px; font-size: 1.5vh;}
+            }
+           }
+         }
+      }
+   }
+   
+ }
+
+ @include breakpoint(medium) {
+   .loginResizeWrap{ padding-top: 10%;}
+ }
+
+
+}
+

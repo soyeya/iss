@@ -1,0 +1,29 @@
+<div class="popCommonWrap loginEmailCheckWrap">
+   <div class="popCommonFlexBox">
+   <div class="popCommonBoxs">
+      <ul>
+          <span class="popCommonImgBoxs"></span>
+          <h5>새로운 비밀번호가 E-mail로 <br>발급 되었습니다.</h5>
+      </ul>
+      <button type="button" class="emailCloseBtn">확인</button>
+   </div>
+</div>
+</div>
+<script>
+    
+    //확인버튼 클릭시, 팝업 닫히게 하기
+    const emailCloseBtn = document.querySelector(".emailCloseBtn");
+    const loginEmailCheckWrap = document.querySelector(".loginEmailCheckWrap");
+
+    if(emailCloseBtn){
+
+      emailCloseBtn.addEventListener("click" , () => {
+
+         loginEmailCheckWrap.classList.remove("active");
+         location.reload();
+
+
+          
+      })
+    }
+</script>

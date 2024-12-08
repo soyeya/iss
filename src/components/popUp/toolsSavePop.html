@@ -1,0 +1,32 @@
+<div class="popCommonWrap toolsSavePopWrap">
+   <div class="popCommonFlexBox">
+   <div class="popCommonBoxs saveCommonBoxs">
+      <ul>
+          <span class="popCommonImgBoxs saveCommonImg"></span>
+          <h5>구성도를 저장하시겠습니까?</h5>
+      </ul>
+      <div class="saveCommonBtnBoxs">
+      <button type="button" class="toolsSaveBtn">취소</button>
+      <button type="button" class="toolsSaveBtn">확인</button>
+     </div>
+   </div>
+</div>
+</div>
+<script>
+    
+   //확인,취소버튼 클릭시, 팝업 닫히게 하기
+   const toolsSaveBtns = document.querySelectorAll(".toolsSaveBtn");
+   const toolsSavePopWraps = document.querySelector(".toolsSavePopWrap");
+
+   if(toolsSaveBtns){
+
+      toolsSaveBtns.forEach((btn) => {
+         
+         btn.addEventListener("click", () => {
+
+            toolsSavePopWraps.classList.remove("active");
+         })
+
+      })
+   }
+</script>

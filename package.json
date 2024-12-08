@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "sass": "^1.81.0"
+  },
+  "homepage": "https://soyeya.github.io/iss/",
+  "basename": "https://soyeya.github.io/iss/"
+}

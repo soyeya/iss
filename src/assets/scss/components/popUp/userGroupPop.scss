@@ -1,0 +1,1422 @@
+.userGroupPopWrapper{
+
+   position: fixed;
+   left:0;
+   top:0;
+   right:0;
+   bottom:0;
+   background-color: #2323258A;
+   z-index:999999999;
+   display: none;
+
+   &.active{
+      display: block;
+   }
+
+   .userGroupPopFlex{
+
+     
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      
+
+      .userGroupPopCont{
+
+         width:calc(100% / 2.46);
+         height:calc(100% / 1.25);
+         min-width:500px;
+         max-width:868px;
+         max-height:780px;
+         border-radius: 10px;
+         border: 1px solid #686868;
+         background-image: $dottedBackGradient;
+         -webkit-background-image: $dottedBackGradient;
+         backdrop-filter: blur(30px);
+         -webkit-backdrop-filter: blur(30px);
+         position: relative;
+
+
+        .userGroupPopContTitles{
+
+          padding:0px 12px 0px 20px;
+          height:47px;
+          width:calc(100% - 32px);
+          background-color: rgba(15, 152, 230 ,0.3);
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border-bottom: 1px solid #686868;
+          position: relative;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+
+          &::after{
+ 
+            content: "";
+            width:calc(100% / 3.54);
+            height:1px;
+            position: absolute;
+            top:-1px;
+            left:calc(100% / 2.8);
+            background-image: $border-linear;
+            -webkit-background-image: $border-linear;
+            
+         }
+
+          h3{
+
+            color:$fontColor-f;
+            font-weight:$fontWeight-400;
+            font-size: $fontSize-16;
+            letter-spacing: $letterSpace-2;
+            display: flex;
+
+            span{
+
+               width: 12px;
+               height:20px;
+               background-size: 0.8vw;
+               background-position: center center;
+               background-repeat: no-repeat;
+               background-image: url(/src/assets/media/popUp/add.svg);
+               -webkit-background-image: url(/src/assets/media/popUp/add.svg);
+               margin-right: 8px;
+               display: inline-block;
+ 
+            }
+          }
+
+          button{
+
+             width: 22px;
+             height: 22px;
+             background-size: 1.4vw;
+             background-position: center center;
+             background-repeat: no-repeat;
+             background-image: url(/src/assets/media/popUp/close.svg);
+             -webkit-background-image: url(/src/assets/media/popUp/close.svg);
+          }
+        }
+
+        .userGroupPopContents{
+
+         width:100%;
+         padding:20px 0px;
+         height: calc(100% - 87px);
+         margin:0 auto;
+         overflow-y: scroll;
+
+       &::-webkit-scrollbar{ width: 2px;
+            background-color: transparent!important;}
+        &::-webkit-scrollbar-thumb{
+            height: 10px!important;
+            border-radius: 10px;
+            background-color: #D9D9D9;
+        }
+        &::-webkit-scrollbar-button:vertical:start:decrement{
+            display: block;
+            height: 25px;
+        }
+        &::-webkit-scrollbar-button:vertical:start:increment{
+            display: block;
+            height: 25px;
+        }
+        &::-webkit-scrollbar-button:vertical:end:decrement {
+            display: block;
+            height: 20px;
+        }
+         &::-moz-scrollbar{ width: 2px;
+         background-color: transparent!important;}
+         &::-moz-scrollbar-thumb{
+               height: 10px!important;
+               border-radius: 10px;
+               background-color: #D9D9D9;
+         }
+         &::-moz-scrollbar-button:vertical:start:decrement{
+               display: block;
+               height: 25px;
+         }
+         &::-moz-scrollbar-button:vertical:start:increment{
+               display: block;
+               height: 25px;
+         }
+         &::-moz-scrollbar-button:vertical:end:decrement {
+               display: block;
+               height: 20px;
+         }
+
+          section{
+
+             width: calc(100% - 40px);
+             padding:0px 20px;
+             border-bottom: 1px solid #4B4B4B;
+
+             &:last-child{ border-bottom: none;}
+
+             .useGroupListBtnWrap01{
+
+               width: 100%;
+               padding: 15px 0px 108px;
+               display: flex;
+               align-items: center;
+               justify-content: flex-end;
+               gap:15px;
+   
+               button{
+   
+                  width: 62px;
+                  height: 36px;
+                  border-radius: 6px;
+                  color:$fontColor-f;
+                  font-weight:$fontWeight-500;
+                  font-size: $fontSize-14;
+                  letter-spacing: $letterSpace-2;
+                  background-image: $buttonGradient-black;
+                  -webkit-background-image: $buttonGradient-black;
+   
+                  &:nth-child(2){
+   
+                     background-image: $buttonGradient-blue;
+                     -webkit-background-image: $buttonGradient-blue;
+                  }
+   
+               }
+            }
+
+             article{
+
+               display: flex;
+               width: 100%;
+
+               &.userGroupArticle01{
+
+                  gap:24px;
+                  padding-bottom:20px;
+               }
+
+               input:focus,textarea:focus{outline: none;}
+
+               label{
+
+                  color:#FF6156;
+                  font-weight:$fontWeight-400;
+                  font-size: $fontSize-11;
+                  letter-spacing: $letterSpace-2;
+                  padding:10px 0px 0px 10px;
+
+               }
+               
+
+             .userGroupPopInfo{
+
+               flex:1;
+               
+               &:first-child{
+
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-between;
+               }
+
+                ul{
+
+                  &:last-child{
+                     margin-right:0px;
+                  }
+                  
+                  li{
+
+                     h5{
+                        color:$fontColor-f;
+                        font-weight:$fontWeight-400;
+                        font-size: $fontSize-14;
+                        letter-spacing: $letterSpace-2;
+                        padding-bottom: 14px;
+                     }
+                     input[type="text"],textarea{ 
+
+                         background-color: #373639;
+                         border: 1px solid #686868;
+                         border-radius: 8px;
+                         color:$fontColor-8e;
+
+                     }
+                     
+                     input[type="text"]{ 
+                        width: calc(100% - 30px);
+                        height: 36px; 
+                        padding:0px 15px;
+                     } 
+
+                     textarea{ 
+                        width: calc(100% - 30px);
+                        height:163px; 
+                        padding:15px;
+                        resize: none;
+                      }
+
+               /* 셀렉박스 */
+                     
+                  .userGroupSelects{
+                     
+                     width:100%;
+                     max-width:402px;
+                     height:36px;
+                     border-radius: 8px;
+                     background-color:#373639;
+                     position: relative;
+
+                     .userGroupSelectsTitleBtn{
+
+                        width: 100%;
+                        padding: 0px 13px;
+                        height: 100%;
+                        position: absolute;
+                        left: 0;
+                        display: block;
+                        border: 1px solid #686868;
+                        background-color:transparent;
+                        font-size: $fontSize-13;
+                        text-align: left;
+                        font-weight: $fontWeight-400;
+                        letter-spacing: $letterSpace-2;
+                        border-radius: 8px;
+                        color:$fontColor-8e;
+                        cursor: pointer;
+                        background-image: url(/src/assets/media/toolsImg/arrowDown.svg);
+                        -webkit-background-image: url(/src/assets/media/toolsImg/arrowDown.svg);
+                        background-size: 0.9vw;
+                        background-position: 97% center;
+                        background-repeat: no-repeat;
+
+                        &.active{
+                           color:$fontColor-f;
+                           border: 1px solid #0BA7FE;
+                        }
+
+                  }
+                  .userGroupSelectList{
+                     position: absolute;
+                     z-index:9999;
+                     top: 42px;
+                     left: 0;
+                     width: 100%;
+                     height:0px;
+                     border-radius: 10px;
+                     border:none;
+                     background-color:rgba(55, 54, 57, 0.9);
+                     opacity: 1;
+                     transition: 300ms;
+                     overflow: hidden;
+                     backdrop-filter: blur(15px);
+                     -webkit-backdrop-filter: blur(15px);
+                     
+                     
+                     &.active{    
+                        opacity: 1;
+                        height: 144px;
+                        z-index: 9999;
+                        border:1px solid #68686866;
+                        transition: height 500ms;
+
+                        }
+
+                     .userGroupSelectListMember{
+
+                        position: absolute;
+                        top: 0px;
+                        left: 0;
+                        width: calc(100%);
+                        height: 100%;
+                        margin: 0 auto;
+                        background-color:transparent;
+                        overflow-x: hidden;
+                        overflow-y: auto;
+                        z-index: 9999;
+
+                        &::-webkit-scrollbar{ display: none;}
+                        &::-moz-scrollbar{ display: none;}
+
+                        li{
+
+                        width: 100%;
+                        height:36px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        &:hover{
+                           background-image: $backgroundGradient;
+                           -webkit-background-image: $backgroundGradient;
+                           opacity: 100%;
+                        }
+                        p{
+
+                           color: $fontColor-f;
+                           font-size: $fontSize-13;
+                           font-weight: $fontWeight-400;
+                           width: calc(100% - 32px);
+                           padding:0px 16px;
+                           height: 100%;
+                           display: flex;
+                           align-items: center;
+                           justify-content: flex-start;
+                           cursor: pointer;
+                        }
+                        }
+                     }
+                     }
+                  }
+                  }
+                }
+             }
+
+             .userGroupHiddenInfo{
+
+               width:100%;
+
+            .userGroupHiddenBtnBoxs{
+
+                  width:100%;
+                  display: flex;
+                  justify-content: flex-end;
+                  padding-bottom:20px;
+            
+
+               button{
+
+                   color:$fontColor-f;
+                   font-weight:$fontWeight-400;
+                   font-size: $fontSize-14;
+                   letter-spacing: $letterSpace-2;
+                   display: flex;
+                   text-decoration: underline;
+
+                   i{
+                     width: 18px;
+                     height: 18px;
+                     background-image: url(/src/assets/media/popUp/arrowDown.svg);
+                     -webkit-background-image: url(/src/assets/media/popUp/arrowDown.svg);
+                     background-size: 0.8vw;
+                     background-position: center center;
+                     background-repeat: no-repeat;
+                   }
+
+                   &.active{
+
+                      i{ 
+                        transform: rotate(180deg);
+                        -webkit-transform: rotate(180deg);
+                     }
+
+                   }
+                   
+                   span{
+
+                     width: 15px;
+                     height: 15px;
+                     display: inline-block;
+                     background-image: url(/src/assets/media/popUp/hidden.svg);
+                     -webkit-background-image: url(/src/assets/media/popUp/hidden.svg);
+                     background-size: 0.8vw;
+                     background-position: center center;
+                     background-repeat: no-repeat;
+                     margin-right:6px;
+                   }
+
+               }
+
+            }
+
+            .hiddenPasswordCont{
+
+               padding:20px;
+               width:calc(100% - 40px);
+               height:calc(245px - 40px);
+               background-color: #373639;
+               border: 1px solid #686868;
+               border-radius: 8px;
+               display: none;
+
+               &.active{
+
+                  display: flex;
+                  justify-content: space-between;
+               }
+
+               ul{ 
+
+                  display: flex;
+                  align-items: flex-end;
+                  gap:20px;
+
+                  &:first-child{
+
+                     width:70%;
+                     display: flex;
+                     align-items: unset;
+                     flex-direction: column;
+                  }
+
+                  li{
+
+                     width: 100%;
+                     height:50%;
+                     display: flex;
+                     flex-direction: column;
+
+                     label{
+                         padding:10px 0px 0px;
+                     
+                     }
+
+                     h5{
+                        color:$fontColor-f;
+                        font-weight:$fontWeight-400;
+                        font-size: $fontSize-14;
+                        letter-spacing: $letterSpace-2;
+                        padding-bottom: 14px;
+                     }
+                     input[type="password"]{ 
+
+                         background-color: #373639;
+                         border: 1px solid #686868;
+                         border-radius: 8px;
+                         color:$fontColor-8e;
+                         height:36px;
+                        //  width:calc(380px - 30px);
+                         width:calc(100% / 1.4);
+                         padding:0px 15px;
+                     }
+
+                   }
+
+               button{
+
+                   width: 137px;
+                   height: 43px;
+                   border-radius: 8px;
+                   background-image: $buttonGradient-blue;
+                   -webkit-background-image: $buttonGradient-blue;
+                   color:$fontColor-f;
+                   font-weight:$fontWeight-600;
+                   font-size: $fontSize-14;
+                   letter-spacing: $letterSpace-2;
+                   display: flex;
+                   align-items: center;
+                   justify-content: center;
+                   margin-bottom:10px;
+               }
+             }
+         
+            }
+             }
+
+             &.userGroupArticle02{
+
+                &:nth-child(1){
+
+                   padding-top:25px;
+                   padding-bottom:35px;
+                }
+
+                .userGroupListBoxs01{
+
+                   padding:20px;
+                   width: calc(100% - 40px);
+                   height:calc(102px - 40px);
+                   margin:0 auto;
+                   background-color: #373639;
+                   border-radius: 8px;
+                   border: 1px solid #686868;
+
+                   h3{
+
+                     color:$fontColor-f;
+                     font-weight:$fontWeight-400;
+                     font-size: $fontSize-14;
+                     letter-spacing: $letterSpace-2;
+                     display: flex;
+                     padding-bottom: 13px;
+
+                     span{
+                        color:$fontColor-f;
+                        font-weight:$fontWeight-400;
+                        font-size: $fontSize-14;
+                        letter-spacing: $letterSpace-2;
+                        padding-left:5px;
+                     }
+                   }
+
+                .userGroupSliders{
+             
+                   margin:0 auto;
+                   width: 100%;
+                   display: flex;
+                   justify-content: space-between;
+
+                   ul{ 
+
+                     max-width:698px;
+                     height:35px;
+                     overflow: hidden;
+
+                     li{
+
+                        display: flex;
+                        gap:10px;
+                        width:100%;
+                        height:100%;
+
+                        p{
+
+                        padding:8px 14px;
+                        border: 1px solid #686868;
+                        border-radius: 65px;
+                        display: flex;
+                        align-items: center;
+                        gap:4px;
+
+                        span{
+                           color:$fontColor-f;
+                           font-weight:$fontWeight-400;
+                           font-size: $fontSize-13;
+                           letter-spacing: $letterSpace-2;
+                        }
+                        
+                        button{
+
+                           width: 17px;
+                           height: 17px;
+                           background-image: url(/src/assets/media/popUp/deleted.svg);
+                           -webkit-background-image: url(/src/assets/media/popUp/deleted.svg);
+                           background-size: 1vw;
+                           background-position: center center;
+                           background-repeat: no-repeat;
+
+                        }
+                     }
+                    }
+                   }
+
+                   .userGroupSlidersBtns{
+
+                     width: calc(100% - 700px);
+                     display: flex;
+                     flex-direction: column;
+                     align-items: flex-end;
+                     position: relative;
+                     top:-10px;
+                     z-index:999;
+
+                       button{
+
+                          width: 20px;
+                          height: 20px;
+                          background-image: url(/src/assets/media/popUp/slideBtn.svg);
+                          -webkit-background-image: url(/src/assets/media/popUp/slideBtn.svg);
+                          background-size: 1rem;
+                          background-position: center center;
+                          background-repeat: no-repeat;
+                          display: block;
+
+                          &:first-child{
+
+                            transform: rotate(180deg);
+                            -webkit-transform: rotate(180deg);
+                            margin-bottom:6px;
+                          }
+                          
+                       }
+                   }
+                }
+                }
+
+                .userGroupListBoxs02{
+
+                   width:100%;
+                   display: flex;
+                   align-items: center;
+                   justify-content: space-between;
+
+                   .userGroupListControlBtnBoxs{
+
+                     display: flex;
+                     flex-direction: column;
+                     align-items: center;
+                     justify-content: center;
+                     gap:9px;
+                     padding:0px 18px;
+                      
+                      button{
+                         
+                        width: 34px;
+                        height: 34px;
+                        border: 1px solid #4B4B4C;
+                        border-radius: 8px;
+                        background-color: #9D9D9D1A;
+                        background-size: 0.8vw;
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        position: relative;
+                        overflow: hidden;
+
+                        &:hover{
+                           &::after{
+                              content: "";
+                              width: 100%;
+                              height: 100%;
+                              position: absolute;
+                              left:0;
+                              top:0;
+                              background-image: linear-gradient(150deg,#7C737366 0%, #39393966 100%);
+                              -webkit-background-image: linear-gradient(#7C737366 0%, #39393966 100%);
+                           }
+                        }
+
+                        &.active{
+                           border: 1px solid #0BA7FE;
+                           &::after{
+                              background-image: none;
+                              -webkit-background-image:none;
+                           }
+                        }
+                     
+                        &:nth-child(1){
+
+                           background-image: url(/src/assets/media/popUp/plus.svg);
+                           -webkit-background-image: url(/src/assets/media/popUp/plus.svg);
+                        }
+                        &:nth-child(2){
+
+                           background-image: url(/src/assets/media/popUp/minus.svg);
+                           -webkit-background-image: url(/src/assets/media/popUp/minus.svg);
+                        }
+
+
+                      }
+
+
+                   }
+
+                   .userGroupListCont{
+
+                     width:380px;
+                     height:520px;
+                     border-radius: 10px;
+                     border: 1px solid #686868;
+                     overflow: hidden;
+
+                      .userGroupListTitles{
+
+                        width: calc(100% - 24px);
+                        padding:0px 12px;
+                        height: 31px;
+                        background-color: rgba(15, 152, 230 ,0.3);
+                        display: flex;
+                        align-items: center;
+
+                        h3{
+
+                           color:$fontColor-f;
+                           font-weight:$fontWeight-400;
+                           font-size: $fontSize-13;
+                           letter-spacing: $letterSpace-2;
+                           display: flex;
+
+                        span{
+
+                           width: 15px;
+                           height:15px;
+                           background-size: 0.8vw;
+                           background-position: center center;
+                           background-repeat: no-repeat;
+                           background-image: url(/src/assets/media/popUp/group.svg);
+                           -webkit-background-image: url(/src/assets/media/popUp/group.svg);
+                           margin-right: 6px;
+                           display: inline-block;
+             
+                        }
+
+                        em{ 
+                           color:$fontColor-f;
+                           font-weight:$fontWeight-500;
+                           font-size: $fontSize-14;
+                           letter-spacing: $letterSpace-2;
+                           font-style: normal;
+                           margin-left:5px;
+                        }
+                      }
+                        
+                      }
+
+                      .userGroupListDatas{
+
+                        width: 100%;
+                        height: 100%;
+                        margin:0 auto;
+                        padding-top:11px; 
+                        overflow-y: scroll;
+
+                     &::-webkit-scrollbar{ width: 2px; background-color: transparent!important;}
+                     &::-webkit-scrollbar-thumb{
+                           height: 10px!important;
+                           border-radius: 10px;
+                           background-color: #D9D9D9;
+                     }
+                     &::-webkit-scrollbar-button:vertical:start:decrement{
+                           display: block;
+                           height: 15px;
+                     }
+                     &::-webkit-scrollbar-button:vertical:start:increment{
+                           display: block;
+                           height: 15px;
+                     }
+                     &::-webkit-scrollbar-button:vertical:end:decrement {
+                           display: block;
+                           height: 15px;
+                     }
+                     &::-moz-scrollbar{ width: 2px; background-color: transparent!important;}
+                     &::-moz-scrollbar-thumb{
+                           height: 10px!important;
+                           border-radius: 10px;
+                           background-color: #D9D9D9;
+                     }
+                     &::-moz-scrollbar-button:vertical:start:decrement{
+                           display: block;
+                           height: 15px;
+                     }
+                     &::-moz-scrollbar-button:vertical:start:increment{
+                           display: block;
+                           height: 15px;
+                     }
+                     &::-moz-scrollbar-button:vertical:end:decrement {
+                           display: block;
+                           height: 15px;
+                     }
+
+                        
+
+                        .userGroupNames{
+
+                            width: 100%;
+                            height: 100%;
+
+                            li{
+
+                               padding:0px 20px;
+                               width: calc(100% - 40px);
+                               height: 41px;
+                               display: flex;
+                               align-items: center;
+                               justify-content: space-between;
+
+                               p{
+                                 color:$fontColor-f;
+                                 font-weight:$fontWeight-400;
+                                 font-size: $fontSize-13;
+                                 letter-spacing: $letterSpace-2;
+                               }
+
+                               button{
+                                 
+                                 width: 20px;
+                                 height: 20px;
+                                 background-size: 1.5vh;
+                                 background-position: center center;
+                                 background-repeat: no-repeat;
+                                 background-image: url(/src/assets/media/popUp/deleted.svg);
+                                -webkit-background-image: url(/src/assets/media/popUp/deleted.svg);
+                                  
+                               }
+
+                              &:hover{
+                                 background-color: #363538;
+                              }
+                            }
+                        }
+
+
+            .groupDatas{
+               
+               width: calc(100% - 24px);
+               padding:0px 12px;
+
+               &.openSelectDatas{ 
+                  padding-top:17px;
+                  height: 100%;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 10px;
+               }
+
+            .groupSelectBoxs{
+
+               width: 100%;
+
+               .groupSelectBoxTitles{
+
+                  width: 100%;
+                  height:40px;
+                  background-color: #373639;
+                  border-radius: 8px;
+
+                  button{
+
+                     width: calc(100%);
+                     padding:0px 0px 0px 16px;
+                     height: 100%;
+                     display: flex;
+                     align-items: center;
+                     justify-content: space-between;
+                     border-radius: 8px;
+                     border: 1px solid #686868;
+                     background-size: 0.8vw;
+                     background-position: right 10px center;
+                     background-repeat: no-repeat;
+                     background-image: url(/src/assets/media/popUp/slideBtnDown.svg);
+                    -webkit-background-image: url(/src/assets/media/popUp/slideBtnDown.svg);
+
+                    &.groupSelectBoxBtn {
+                     &.active{
+                        border: 1px solid #0BA7FE;
+                        background-image: url(/src/assets/media/popUp/slideBtnUp.svg);
+                        -webkit-background-image: url(/src/assets/media/popUp/slideBtnUp.svg);
+
+                        span{
+                           color:$fontColor-f;
+                           background-image: url(/src/assets/media/popUp/groupWhite.svg);
+                           -webkit-background-image: url(/src/assets/media/popUp/groupWhite.svg);
+
+                        }
+                     }
+                    }
+
+                     h3{
+
+                        color:$fontColor-f;
+                        font-weight:$fontWeight-400;
+                        font-size: $fontSize-14;
+                        letter-spacing: $letterSpace-2;
+
+                     }
+
+                     span{
+
+                        color:#7F7F7F;
+                        font-weight:$fontWeight-400;
+                        font-size: $fontSize-14;
+                        letter-spacing: $letterSpace-2;
+                        width:20px;
+                        height:20px;
+                        padding: 0px 40px 0px 18px;
+                        background-size: 0.7vw;
+                        background-position: left bottom 6px;
+                        background-repeat: no-repeat;
+                        background-image: url(/src/assets/media/popUp/groupGray.svg);
+                       -webkit-background-image: url(/src/assets/media/popUp/groupGray.svg);
+                        
+
+                     }
+                  }
+
+
+               }
+               
+
+            .groupSelectContents{
+
+               display:none;
+               height: 100%;
+               background-size:contain;
+               background-position: 10% top;
+               background-repeat: no-repeat;
+               background-image: url(/src/assets/media/popUp/dashBack.svg);
+              -webkit-background-image: url(/src/assets/media/popUp/dashBack.svg);
+
+               &.active{ 
+
+                  display:block;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  padding-top: 20px;
+               }
+
+         /* 셀렉박스 */    
+         .groupListSelects{
+                     
+                  width:calc(100% / 1.2);
+                  // max-width:313px;
+                  height:40px;
+                  background-color:transparent;
+                  margin-left:15%;
+                  margin-bottom:10px;
+                  position: relative;
+
+                  &.active{
+                     height:191px;
+                  }
+            
+
+                  .groupListSelectsTitleBtn{
+
+                     width: 100%;
+                     padding: 0px 13px;
+                     height: 40px;
+                     position: absolute;
+                     left: 0;
+                     display: flex;
+                     align-items: center;
+                     justify-content: flex-start;
+                     background-color:#373639;
+                     font-size: $fontSize-13;
+                     text-align: left;
+                     font-weight: $fontWeight-400;
+                     letter-spacing: $letterSpace-2;
+                     border-radius: 8px;
+                     border: 1px solid #686868;
+                     color:$fontColor-8e;
+                     cursor: pointer;
+                     background-image: url(/src/assets/media/popUp/slideBtnDown.svg);
+                     -webkit-background-image: url(/src/assets/media/popUp/slideBtnDown.svg);
+                     background-size: 0.8vw;
+                     background-position: 95% center;
+                     background-repeat: no-repeat;
+
+                     &.active{
+                        color:$fontColor-f;
+                        border: 1px solid #0BA7FE;
+                        background-image: url(/src/assets/media/popUp/slideBtnUp.svg);
+                        -webkit-background-image: url(/src/assets/media/popUp/slideBtnUp.svg);
+
+                        span{
+                           color:$fontColor-f;
+                        }
+                     }
+
+                     span{
+
+                           display: flex;
+                           align-items: center;
+                           justify-content: center;
+                           color:$fontColor-8e;
+                           font-weight: $fontWeight-400;
+                           font-size: 10px;
+                           letter-spacing: $letterSpace-2;
+                           margin-left:6px;
+                     }
+
+               }
+
+               .groupListSelectList{
+                  position: absolute;
+                  z-index:9999;
+                  top: 47px;
+                  left: 0;
+                  width: 100%;
+                  height:0px;
+                  border:none;
+                  border-radius: 3px;
+                  background-color: transparent;
+                  opacity: 1;
+                  overflow: hidden;
+                  
+                  
+                  &.active{    
+                     opacity: 1;
+                     height: 144px;
+                     z-index: 9999;
+                     transition: height 500ms;
+
+                     }
+
+                  .groupListSelectListMember{
+
+                     position: absolute;
+                     top: 0px;
+                     left: 0;
+                     width: calc(100% - 2px);
+                     height: 100%;
+                     margin: 0 auto;
+                     border-radius: 3px;
+                     background-color:transparent;
+                     overflow-x: hidden;
+                     overflow-y: auto;
+                     z-index: 9999;
+
+                     &::-webkit-scrollbar{ width: 2px; background-color: transparent!important;}
+                     &::-webkit-scrollbar-thumb{
+                           height: 10px!important;
+                           border-radius: 10px;
+                           background-color: #D9D9D9;
+                     }
+                     &::-webkit-scrollbar-button:vertical:start:decrement{
+                           display: block;
+                           height: 15px;
+                     }
+                     &::-webkit-scrollbar-button:vertical:start:increment{
+                           display: block;
+                           height: 15px;
+                     }
+                     &::-webkit-scrollbar-button:vertical:end:decrement {
+                           display: block;
+                           height: 15px;
+                     }
+
+                     &::-moz-scrollbar{ width: 2px; background-color: transparent!important;}
+                     &::-moz-scrollbar-thumb{
+                           height: 10px!important;
+                           border-radius: 10px;
+                           background-color: #D9D9D9;
+                     }
+                     &::-moz-scrollbar-button:vertical:start:decrement{
+                           display: block;
+                           height: 15px;
+                     }
+                     &::-moz-scrollbar-button:vertical:start:increment{
+                           display: block;
+                           height: 15px;
+                     }
+                     &::-moz-scrollbar-button:vertical:end:decrement {
+                           display: block;
+                           height: 15px;
+                     }
+
+
+
+                     .optionGroupBtn{ 
+
+                        width: 100%;
+                        background-color:#D9D9D917;
+                        height:26px;
+                        padding:0px 14px;
+                        background-image: url(/src/assets/media/toolsImg/arrowDown.svg);
+                        -webkit-background-image: url(/src/assets/media/toolsImg/arrowDown.svg);
+                        background-size: 0.8vw;
+                        background-position: 95% center;
+                        background-repeat: no-repeat;
+                        border-radius: 3px;
+                        color:$fontColor-f;
+                        font-weight:$fontWeight-400;
+                        font-size: $fontSize-13;
+                        letter-spacing: $letterSpace-2;
+                        text-align: left;
+
+                     }
+
+                     .optionListBoxs{
+
+                     
+                         background-color:#212124;
+               
+                     }
+
+                     li{
+
+                     width: 100%;
+                     height:40px;
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+
+                     &:hover{
+                        background-color: #363538;
+                        opacity: 100%;
+                     }
+                     &.active{
+                        background-color: #363538;
+                     }
+                     p{
+
+                        color: $fontColor-f;
+                        font-size: $fontSize-13;
+                        font-weight: $fontWeight-400;
+                        width: calc(100% - 32px);
+                        padding:0px 16px;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        cursor: pointer;
+
+                     }
+
+                     }
+                  }
+                  }
+               }  
+            } 
+           }
+
+            .inputBoxs{
+
+               width: 100%;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               background-color: #171718;
+               border-radius: 5px;
+               border: 1px solid #393939;
+               overflow: hidden;
+
+               input[type="search"]{
+
+                  background-color: transparent;
+                  border: none;
+                  width: calc(100% - 40px);
+                  height: 44px;
+                  display: inline-block;
+                  color:$fontColor-f;
+                  font-weight:$fontWeight-400;
+                  font-size: $fontSize-13;
+                  letter-spacing: $letterSpace-2;
+
+               }
+
+               .searchBtn{
+
+               width: 20px;
+               height: 20px;
+               position: relative;
+               right:8px;
+               background-size: 0.8vw;
+               background-position: center center;
+               background-repeat: no-repeat;
+               background-image: url(/src/assets/media/popUp/searchBtn.svg);
+               -webkit-background-image: url(/src/assets/media/popUp/searchBtn.svg);
+
+               }
+         }
+                    }
+
+                      }
+
+                   }
+                }
+
+             }
+            
+            
+            }
+          }
+        }
+
+        .useGroupListBtnWrap02{
+
+         width: 100%;
+         padding: 20px 0px 20px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         position: absolute;
+         bottom:0px;
+         z-index:99999;
+         background-color: #1d1d1f;
+         border-top:1px solid #686868;
+         border-bottom-left-radius: 10px;
+         border-bottom-right-radius: 10px;
+
+         button{
+
+            width: 126px;
+            height: 36px;
+            border-radius: 6px;
+            color:$fontColor-f;
+            font-weight:$fontWeight-600;
+            font-size: $fontSize-14;
+            letter-spacing: $letterSpace-2;
+            background-image: $buttonGradient-blue;
+            -webkit-background-image: $buttonGradient-blue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+         }
+      }
+
+      }
+   }
+
+   @include breakpoint(x-large){
+
+      .userGroupPopFlex {
+         .userGroupPopCont{
+            .userGroupPopContents {
+            section {
+               article {
+                .userGroupPopInfo {
+                 ul{
+                   li{
+                     .userGroupSelects{
+                        .userGroupSelectsTitleBtn{
+                           font-size: 1vw;
+                        }
+                        .userGroupSelectList {
+                           .userGroupSelectListMember {
+                              li{
+                                 p{ font-size: 1vw;}
+                              }
+                           }
+                        } 
+                     }
+                   }
+                 }
+                }
+               }
+             article.userGroupArticle02 {
+             .userGroupListBoxs01{
+             .userGroupSliders {
+              ul {
+               li {
+                p {
+                  padding:8px;
+                 span { font-size: 0.65vw;}
+                }
+               }
+               }
+               }
+              }
+              .userGroupListBoxs02{
+               .userGroupListCont {
+                .userGroupListDatas{
+                  .userGroupNames{
+                      li{
+                        p{ font-size: 0.7vw;}
+                      }
+                  }
+                 .groupDatas{
+                  .inputBoxs{
+                   input[type=search] { font-size: 0.65vw;}
+                  }
+                  .groupSelectBoxs{
+                   .groupSelectBoxTitles{
+                     button{
+                        h3{ font-size: 0.8vw;}
+                        span{ font-size: 0.8vw; padding: 0px 20px 0px 18px; display: flex; align-items: center;}
+                     }
+                   } 
+                   .groupSelectContents{
+                     .groupListSelects{
+                        .groupListSelectsTitleBtn{ font-size: 0.7vw;
+                         span{ font-size: 0.7vw; margin-left:3px;}
+                         }
+                        .groupListSelectList {
+                           .groupListSelectListMember{
+                              .optionGroupBtn{ font-size: 0.7vw;}
+                              li{
+                                 p{ font-size: 0.7vw;}
+                              }
+                           }
+                        }
+                     }
+                   }
+                  } 
+                 }
+                }
+               }
+              }
+              }
+             }
+            }
+         }
+      }
+   }
+
+   @include breakpoint(large){
+
+      .userGroupPopFlex {
+         .userGroupPopCont{
+            .userGroupPopContents {
+            section {
+               article { label{ padding:10px 0px 0px 0px;}}
+             article.userGroupArticle02 {
+             .userGroupListBoxs01{
+               padding: 20px 10px;
+               width: calc(100% - 20px);
+             .userGroupSliders {
+              ul {
+                height:25px;
+               li { 
+                p {
+                  padding:5px;
+                  gap:0px;
+                 span { font-size: 0.65vw;}
+                }
+               }
+               }
+               }
+              }
+              .userGroupListBoxs02{
+               .userGroupListCont {
+                .userGroupListDatas{
+                  .userGroupNames{
+                      li{
+                        p{ font-size: 0.7vw;}
+                      }
+                  }
+                 .groupDatas{
+                  .inputBoxs{
+                   input[type=search] { font-size: 0.8vw; height:30px;}
+                  }
+                  .groupSelectBoxs{
+                   .groupSelectBoxTitles{
+                     height:30px;
+                     button{
+                        span{ background-position: left 10% bottom 50%;}
+                     }
+                   } 
+                   .groupSelectContents{
+                     .groupListSelects{
+                        height:30px;
+                        .groupListSelectsTitleBtn{ font-size: 0.7vw; height:30px;}
+                        .groupListSelectList {
+                           top:37px;
+                           .groupListSelectListMember{
+                              .optionGroupBtn{ font-size: 0.7vw;}
+                              li{
+                                 p{ font-size: 0.7vw;}
+                              }
+                           }
+                        }
+                     }
+                   }
+                  } 
+                 }
+                }
+               }
+              }
+              }
+             }
+            }
+         }
+      }
+   }
+
+
+   @include breakpoint(medium){
+
+         .userGroupPopFlex{
+            .userGroupPopCont{
+               .userGroupPopContents{
+                  section{
+                     article.userGroupArticle02{
+                        .userGroupListBoxs01{
+                           .userGroupSliders{
+                              ul{
+                                 li{ gap:5px;}
+                              }
+                           }
+                        }
+
+                     }
+                  }
+               }
+            }
+         }
+   }
+
+}

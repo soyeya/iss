@@ -1,0 +1,206 @@
+/* 수정사항 20241203 */
+
+/* 폰트관련폴더추가 */
+
+src > font 폴더추가
+
+
+/* html */
+
+1) index.html - 6번 주석처리
+2) src > components > dashboard > copyState.html  - 6번 주석처리
+3) src > components > dashboard > issuesState.html  - 6번 주석처리
+4) src > components > dashboard > switchDetails.html  - 6번 주석처리
+5) src > components > dashboard > tools.html - 6번 주석처리
+6) src > components > login > login.html - 6번 주석처리
+7) header.html _ 69번 ~ 143번추가 
+8) src > components > manage > userManage.html - 6번 주석처리, 144번 ~ 199번추가
+9) src > components > setup > edit.html  - 6번 주석처리
+10) src > components > setup > customizing.html 
+6번 주석처리
+80번- ul 요소에 class명(alarmHandlerCont)추가
+82번 - datas01(class명)내에 i요소 추가 , span내에 text 0%로 변경
+85번- ul 요소에 class명(alarmHandlerCont)추가
+87번 - datas02(class명)내에 i요소 추가 ,  span내에 text 0%로 변경
+89번- ul 요소에 class명(alarmHandlerCont)추가
+91번 - datas03(class명)내에 i요소 추가 , span내에 text 0%로 변경
+93번- ul 요소에 class명(alarmHandlerCont)추가
+95번 - datas04(class명)내에 i요소 추가 ,  span내에 text 0%로 변경
+
+
+/* scss */
+
+
+1) src > assets > scss > variables.scss 78번 ~ 80번추가 (@else if $size ==  xxxlarge 관련)
+2) src > assets > scss > style.scss 
+   12번 - font-family: "Pretendard", sans-serif; 변경
+   15번추가 &::-moz-scrollbar
+   40번 ~ 94번추가 @font-face 관련
+   
+3) src > assets > scss > header.scss 
+   250번 -  &.active _   padding-bottom: 57px; 추가
+   386번추가 -  &::-moz-scrollbar
+   387번추가 -  &::-moz-scrollbar-thumb
+   392번추가 -  &::-moz-scrollbar-button:vertical:start:decrement
+   396번추가 -  &::-moz-scrollbar-button:vertical:start:increment
+   400번추가 -  &::-moz-scrollbar-button:vertical:end:decrement
+   537번 -  &.active{ height:calc(412px * 1.3);} 변경
+   544번 -  &.active{ height:calc(312px * 1.3);} 변경
+   578번 -  .alaramPopBoxs _ height:212px; 변경
+   580번 -  &.active{ height:calc(212px * 1.3);} 변경
+
+3) navigation src > assets > scss > navigation.scss 
+
+534번 ~ 562번추가 @include breakpoint(xxxlarge)
+571번추가 &::-moz-scrollbar
+
+4) 사용자그룹관리 src > assets > scss > compontents > manage > userManage.scss
+
+11번추가 - &::-moz-scrollbar
+162번추가 - &::-moz-scrollbar
+534번 -  &::-webkit-scrollbar _ height:2px; 추가
+552번추가 - &::-moz-scrollbar
+553번추가 - &::-moz-scrollbar-thumb
+558번추가 - &::-moz-scrollbar-button:vertical:start:decrement
+562번추가 - &::-moz-scrollbar-button:vertical:start:increment
+566번추가 - &::-moz-scrollbar-button:vertical:end:decrement 
+571번 - table _ width:101% 변경
+576번 - thead _  position: sticky; top:0; z-index:999; 삭제
+
+
+5) 복제구성도  src > assets > scss > compontents > dashboard > copyState.scss
+
+13번추가 - &::-moz-scrollbar{ display: none;}
+98번 -   .storageBoxWrappers _ padding: padding:45px 27px 0px; 변경  overflow-y: auto;변경 overflow-x: auto;변경
+108번 -  &::-webkit-scrollbar _ display:none 삭제, width: 2px; height:2px; 추가
+109번추가 - &::-webkit-scrollbar-thumb
+114번추가 - &::-webkit-scrollbar-button:vertical:start:decrement
+118번추가 - &::-webkit-scrollbar-button:vertical:start:increment
+122번추가 - &::-webkit-scrollbar-button:vertical:end:decrement
+126번추가 - &::-moz-scrollbar
+127번추가 - &::-moz-scrollbar-thumb
+132번추가 - &::-moz-scrollbar-button:vertical:start:decrement
+136번추가 - &::-moz-scrollbar-button:vertical:start:increment
+140번추가 - &::-moz-scrollbar-button:vertical:end:decrement
+145번 -  .storageBox_ max-width 삭제 width:236px 추가
+
+574번추가 - &::-moz-scrollbar
+575번추가 - &::-moz-scrollbar-thumb
+580번추가 - &::-moz-scrollbar-button:vertical:start:decrement
+584번추가 - &::-moz-scrollbar-button:vertical:start:increment
+588번추가 - &::-moz-scrollbar-button:vertical:end:decrement 
+701번 ~ 717번추가- @include breakpoint(xxxlarge)
+
+6) 커스텀설정 src > assets > scss > compontents > setup > customizing.scss
+
+10번추가 - &::-moz-scrollbar
+134번 - &::after _ top:-1px; 변경
+245번 - &::after _ top:-1px; 변경
+335번 - &::before 요소 주석처리
+348번추가 -         i{
+                     width: 14px;
+                     height: 14px;
+                     border-radius: 100%;
+                     position: absolute;
+                     top:-6px;
+                     box-shadow: 0px 4px 14px 0px #0000002E;
+                       }
+357번 - em _ width:0px 변경
+368번 - &::before 값 주석처리
+369번추가 - i{background-color: #25ABF8;}
+370번 - em _ width값 삭제 
+376번 - &::before 값 주석처리
+377번추가 - i{background-color: #4AF0E4;}
+384번 - &::before 값 주석처리
+385번추가 - i{background-color: #9AD65C;} 
+392번 - &::before 값 주석처리
+393번추가 - i{background-color: #4D70F7;}
+516번 ~ 540번추가  @include breakpoint(xxxlarge)
+
+
+5) 로그인페이지 src > assets > scss > compontents > login.scss
+
+32번추가 &::-moz-scrollbar
+60번 - &::after _ top:-1px 변경
+239번~245번추가 @include breakpoint(xxxlarge)
+
+
+6) 장애현황 src > assets > scss > compontents > dashboard > issuesState.scss 
+
+21번추가 - &::-moz-scrollbar
+63번  &::after 주석처리
+75번추가 .gradientLines{
+
+               width:calc(100% / 4.1);
+               height:1px;
+               position: absolute;
+               top:-1px;
+               left:calc(100% / 2.6);
+               background-image: $border-linear;
+               -webkit-background-image: $border-linear;
+             }
+
+209번 ~ 217번추가 @include breakpoint(xxxlarge)
+
+
+7) 메인 src > assets > scss > main.scss 
+
+17번추가 -   &::-moz-scrollbar
+
+8) switchDetails src > assets > scss > compontents > dashboard > switchDetails.scss
+
+9번추가 -  &::-moz-scrollbar
+
+9번) 장비구성도  src > assets > scss > compontents > dashboard > tools.scss
+
+12번추가 -  &::-moz-scrollbar
+374번추가 - &::-moz-scrollbar
+375번추가 - &::-moz-scrollbar-thumb
+380번추가 - &::-moz-scrollbar-button:vertical:start:decrement
+384번추가 - &::-moz-scrollbar-button:vertical:start:increment
+388번추가 -  &::-moz-scrollbar-button:vertical:end:decrement
+
+
+10번) 대시보드편집  src > assets > scss > compontents > setup > edit.scss
+
+9번추가 - &::-moz-scrollbar
+181번추가 - &::-moz-scrollbar
+297번추가 - &::-moz-scrollbar
+298번추가 - &::-moz-scrollbar-thumb
+304번추가 - &::-moz-scrollbar-button:vertical:start:decrement
+308번추가 - &::-moz-scrollbar-button:vertical:start:increment
+312번추가 - &::-moz-scrollbar-button:vertical:end:decrement
+335번 -  &::after _ top: -1px; 변경
+468번추가 - &::-moz-scrollbar
+628번추가 - &::-moz-scrollbar
+629번추가 - &::-moz-scrollbar-thumb
+683번 -   &::after _ top:-1px; 변경
+703번 ~ 733번추가 -  @include breakpoint(xxxlarge) 
+
+11번) 스위치상세정보팝업 src > assets > scss > popUp > switchPop.scss 
+
+13번추가 - &::-moz-scrollbar
+
+12번) 사용자그룹팝업 src > assets > scss > popUp > userGroupPop.scss
+
+131번추가 - &::-moz-scrollbar
+133번추가 - &::-moz-scrollbar-thumb
+138번추가 - &::-moz-scrollbar-button:vertical:start:decrement
+142번추가 - &::-moz-scrollbar-button:vertical:start:increment
+146번추가 - &::-moz-scrollbar-button:vertical:end:decrement 
+341번추가 - &::-moz-scrollbar
+782번추가 - &::-moz-scrollbar
+783번추가 - &::-moz-scrollbar-thumb
+788번추가 - &::-moz-scrollbar-button:vertical:start:decrement
+792번추가 - &::-moz-scrollbar-button:vertical:start:increment
+796번추가 - &::-moz-scrollbar-button:vertical:end:decrement 
+1070번추가 - &::-moz-scrollbar
+1071번추가 - &::-moz-scrollbar-thumb
+1076번추가 - &::-moz-scrollbar-button:vertical:start:decrement
+1080번추가 - &::-moz-scrollbar-button:vertical:start:increment
+1084번추가 - &::-moz-scrollbar-button:vertical:end:decrement 
+
+/* js */
+
+1. src > js > customizing.js  109번 ~ 164번 추가 _알람조절함수
+2. src > js > issuesState.js  59번추가 - <span class="gradientLines"></span> 요소추가

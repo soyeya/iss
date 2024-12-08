@@ -1,0 +1,85 @@
+//폰트관련
+
+$fontColor-f : #fff;
+$fontColor-85 : #858585;
+$fontColor-d1 :#D1D1D1;
+$fontColor-8e:#8E8E8E;
+$fontSize-8 : 8px;
+$fontSize-9 : 9px;
+$fontSize-10 : 10px;
+$fontSize-11 : 11px;
+$fontSize-12 : 12px;
+$fontSize-13 : 13px;
+$fontSize-14 : 14px;
+$fontSize-15 : 15px;
+$fontSize-16 : 16px;
+$fontWeight-300 : 300;
+$fontWeight-400 : 400;
+$fontWeight-500 : 500;
+$fontWeight-600 : 600;
+$fontWeight-700 : 700;
+$letterSpace-2 : 0.2px;
+
+
+//백그라운드
+$backgroundColor-2325 : #232325;
+$backgroundColor-1111 : #111;
+$dottedBackGradient : linear-gradient(rgba(56, 50, 57, 0.3) 0%, rgba(17, 17, 18, 0.5) 100%);
+
+//보더 그라데이션
+$border-linear:linear-gradient(90deg, #686868 0%, #B7B7B7 52%, #686868 100%);
+$border-linear-4041:linear-gradient(90deg,#404041 0%, #B7B7B7 52%, #404041 100%);
+$border-linear-45b7:linear-gradient(90deg, #454545 0%, #b7b7b7 52%, #454545 100%);
+$border-linear-blue:linear-gradient(90deg, #0BA7FE 0%, #70C8FB 52%, #0BA7FE 100%);
+
+
+//버튼컬러
+$buttonGradient-blue : linear-gradient(to left,#0F98E6 0%, #085580 100%);
+$buttonGradient-black : linear-gradient(to left,#4D4B50 0%, #2F2E31 100%);
+
+
+/* 복제구성도 컬러별 */
+
+//보더
+$border-blue : 1px solid #3B6984;
+$border-green : 1px solid #3B7884;
+$border-list-blue : 1px solid #0F98E6;
+
+//타이틀 백그라운드
+$backgroundColor-blue :rgba(15, 152, 230,0.3);
+$backgroundColor-green :rgb(50, 213, 201, 0.3);
+
+//리스트 데이터
+$list-data-blue : linear-gradient(#0F98E6 0%, #0C6CA2 100%);
+$list-data-deepBlue : linear-gradient(#494CDA 0%, #2D2F9B 100%);
+$list-data-yellow : linear-gradient(#F0A23D 0%, #C97911 100%);
+$list-data-purple : linear-gradient(#B56DD4 0%, #994CBB 100%);
+$list-data-green : linear-gradient(#32D5C9 0%, #1A857D 100%);
+$list-data-orange : linear-gradient(#E16F65 0%, #AF352B 100%);
+$list-data-lightYellow : linear-gradient(#FDE652 0%, #C8B53A 100%);
+$list-data-lightPurple : linear-gradient(#9A8FFF 0%, #6C5EED 100%);
+$list-data-lightGreen : linear-gradient(#96F33F 0%, #61A621 100%);
+$list-data-deepPurple : linear-gradient(#991BD3 0%, #7917A6 100%);
+$list-data-deepGreen : linear-gradient(#1D4D57 0%, #062B34 100%);
+
+
+
+//반응형
+
+@mixin breakpoint($size) {
+   @if $size == small {
+     @media (max-width: 768px) { @content; }
+   } @else if $size ==  medium{
+     @media (max-width: 1024px) { @content; }
+   } @else if $size ==  large{
+      @media (max-width: 1390px) { @content; }
+    }@else if $size ==  x-large{
+      @media (max-width: 1600px) { @content; }
+    }@else if $size ==  xxxlarge{
+      @media (min-width: 1921px) { @content; }
+    }
+ }
+
+
+
+

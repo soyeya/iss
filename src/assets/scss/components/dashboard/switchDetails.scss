@@ -1,0 +1,17 @@
+#switchDetailsWrappers{
+
+    width: 100vw;
+    height: 100vh;
+    margin:0 auto;
+    background-color:$backgroundColor-2325;
+
+    &::-webkit-scrollbar{ display: none;}
+    &::-moz-scrollbar{ display: none;}
+
+    .switchDetailsContentWrap{
+
+        padding:58px 0px 0px 70px;
+        height: calc(100% - 58px);
+    }
+
+}

@@ -1,0 +1,650 @@
+.navFixed{
+
+     position: absolute;
+     left:0;
+     top:0;
+     width:69px;
+     height:100vh;
+     background-color:transparent;
+     border-right:1px solid #6A6A6A33;
+     z-index:99999999;
+     transition: width 800ms;
+
+     &.active{
+
+      width:250px;
+      transition: width 800ms;
+
+      nav{ 
+         .menuWrappers{
+            .logoBoxs{ background-position: left 11% center;}
+         }}
+
+     }
+
+     &.color-111{ background-color:#111111;}
+     &.color-2325{ background-color: $backgroundColor-2325;}
+
+     nav{
+
+         height:100%;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: space-between;
+
+         .menuWrappers{
+
+            width: 100%;
+
+            .logoBoxs{
+
+                width:100%;
+                height:50px;
+                background-image: url(/src/assets/media/nav/logo.svg);
+                -webkit-background-image: url(/src/assets/media/nav/logo.svg);
+                background-size: 1.3vw;
+                background-repeat: no-repeat;
+                background-position: left 50% center;
+                border-bottom:1px solid #6A6A6A33;
+
+                a{
+
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  width: 100%;
+                  height: 100%;
+
+                  span{
+
+                      color:$fontColor-f;
+                      font-size: $fontSize-16;
+                      font-weight: $fontWeight-400;
+                      letter-spacing: $letterSpace-2;
+                      opacity: 0;
+                      display: none;
+
+                      &.active{
+                        display: block;
+                        opacity: 1;
+                        transition: opacity 800ms;
+                      }
+                  }
+
+                }
+
+            }
+
+            .menuBoxs{
+               padding:20px 10px;
+               margin:0 auto;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+
+               &.active{ display:none;}
+
+               ul{
+
+                 li.navBtnBoxs{
+
+                    margin-bottom:9px;
+                    width:48px;
+                    height:48px;
+                    border-radius: 10px;
+                    border: 1px solid transparent;
+                    position: relative;
+
+                    &:hover, &.active{ 
+                        border: 1px solid transparent;
+                        background-image: linear-gradient(#111, #111), linear-gradient(360deg, #686868 10%, #484848 100%);
+                        -webkit-background-image: linear-gradient(#111, #111), linear-gradient(360deg, #686868 10%, #484848 100%);
+                        background-origin: border-box;
+                        background-clip: content-box, border-box;
+                    }
+
+
+                    &:hover::before, &.active::before{
+                     content: "";
+                     width:calc(100% / 3);
+                     height:0.5px;
+                     position: absolute;
+                     top:0px;
+                     left:calc(100% / 6);
+                     background-image: linear-gradient(90deg, #4B5352 0%, #9B9B9B 52%, #4B5352 100%);
+                     -webkit-background-image: linear-gradient(90deg, #4B5352 0%, #9B9B9B 52%, #4B5352 100%);
+
+                }
+         
+
+                    button{
+
+                        width: 100%;
+                        height:100%;
+                        border-radius: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border: 1px solid transparent;
+                        position: relative;
+                        cursor: pointer;
+
+                     &:hover, &.active{ 
+                        background-image: linear-gradient(360deg,#236085 10%, #2f2f32 100%);
+                        -webkit-background-image: linear-gradient(360deg,#236085 10%, #2f2f32 100%);
+                     }
+
+                     &::before{
+                        content: "";
+                        position: absolute;
+                        left:0;
+                        top:0;
+                        width: 100%;
+                        height: 100%;
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        background-size: 2.7vw;
+                      }
+                      
+                      &.navBtn01::before{
+                         background-image: url(/src/assets/media/nav/navIcon01.svg);
+                         -webkit-background-image: url(/src/assets/media/nav/navIcon01.svg);
+                      }
+                      &.navBtn02::before{
+                         background-image: url(/src/assets/media/nav/navIcon02.svg);
+                         -webkit-background-image: url(/src/assets/media/nav/navIcon02.svg);
+                      }
+                      &.navBtn03::before{
+                         background-image: url(/src/assets/media/nav/navIcon03.svg);
+                         -webkit-background-image: url(/src/assets/media/nav/navIcon03.svg);
+                      }
+                      &.navBtn04::before{
+                         background-image: url(/src/assets/media/nav/navIcon04.svg);
+                         -webkit-background-image: url(/src/assets/media/nav/navIcon04.svg);
+                      }
+                      &.navBtn05::before{
+                         background-image: url(/src/assets/media/nav/navIcon05.svg);
+                         -webkit-background-image: url(/src/assets/media/nav/navIcon05.svg);
+                      }
+                      &.navBtn06::before{
+                         background-image: url(/src/assets/media/nav/navIcon06.svg);
+                         -webkit-background-image: url(/src/assets/media/nav/navIcon06.svg);
+                      }
+
+                      &:hover::before, &.active::before{
+                        filter: brightness(100);
+                        -webkit-filter: brightness(100);
+                      }
+                      
+                    }
+                    .subMenusWrapper{
+
+                         position: fixed;
+                         z-index:999;
+                         left:70px;
+                         border: 1px solid #686868;
+                         border-radius: 10px;
+                         backdrop-filter: blur(15px);
+                         -webkit-backdrop-filter: blur(15px);
+                         width: 183px;
+                         padding:15px 0px 9px;
+                         background-color: #2A2B2CCC;
+                         display:none;
+                         
+
+                         &.active{ display:block; }
+                         .subMenuBoxs{
+
+                            width: 100%;
+
+                            li{
+                               padding:7px 0px;
+                               height:calc(100% - 30px);
+
+                              &:first-child{
+
+                                 padding:0px 15px;
+                                 border-bottom: 1px solid #686868;
+                                 height:calc(100%);
+                              }
+                              .imgBoxs{
+                                 background-position: center center;
+                                 background-repeat: no-repeat;
+                                 background-size: 2vw;
+                                 width:17px;
+                                 height:17px;
+                                 float:left;
+                                 filter: brightness(100);
+                                 -webkit-filter: brightness(100);
+                                 margin-right:8px;
+
+                              
+                              &.subIcons01{
+                   
+                                 background-image: url(/src/assets/media/nav/navIcon01.svg);
+                                 -webkit-background-image: url(/src/assets/media/nav/navIcon01.svg);
+                              }
+                              &.subIcons02{
+                   
+                                 background-image: url(/src/assets/media/nav/navIcon02.svg);
+                                 -webkit-background-image: url(/src/assets/media/nav/navIcon02.svg);
+                              }
+                              &.subIcons03{
+                   
+                                 background-image: url(/src/assets/media/nav/navIcon03.svg);
+                                 -webkit-background-image: url(/src/assets/media/nav/navIcon03.svg);
+                              }
+                              &.subIcons04{
+                   
+                                 background-image: url(/src/assets/media/nav/navIcon04.svg);
+                                 -webkit-background-image: url(/src/assets/media/nav/navIcon04.svg);
+                              }
+                              &.subIcons05{
+                   
+                                 background-image: url(/src/assets/media/nav/navIcon05.svg);
+                                 -webkit-background-image: url(/src/assets/media/nav/navIcon05.svg);
+                              }
+                              &.subIcons06{
+                   
+                                 background-image: url(/src/assets/media/nav/navIcon06.svg);
+                                 -webkit-background-image: url(/src/assets/media/nav/navIcon06.svg);
+                              }
+
+                           }
+                                 
+                              h3{
+
+                                 color:$fontColor-f;
+                                 font-weight: $fontWeight-500;
+                                 font-size: $fontSize-14;
+                                 letter-spacing: $letterSpace-2;
+                                 padding-bottom: 15px;
+                              }
+
+                              a{
+
+                                 display: block;
+                                 width: calc(100% - 64px);
+                                 height:calc(100% - 19px);
+                                 padding:8px 32px;
+                                 color:$fontColor-85;
+                                 font-weight: $fontWeight-400;
+                                 font-size: $fontSize-13;
+                                 letter-spacing: $letterSpace-2;
+                                 position: relative;
+
+                                 &::before{
+
+                                    position: absolute;
+                                    left:19px;
+                                    top:43%;
+                                    content: "";
+                                    width:4px;
+                                    height:4px;
+                                    border-radius: 50%;
+                                    background-color: #858585;
+
+                                 }
+                                 &.active, &:hover{ color:$fontColor-f;}
+                                 &.active::before, &:hover::before{
+                                    background-color:#1194E3; 
+                                    }
+                              }
+                            }
+                         }
+                      }
+                 }
+               }
+            }
+
+            .addmenuBoxs{
+
+               padding:20px 10px;
+               width:calc(100% - 20px);
+               margin:0 auto;
+               display:none;
+               opacity: 0;
+
+                &.active{
+
+                   display:block;
+                   opacity: 1;
+                   transition: opacity 800ms;
+                }
+               
+               ul{
+
+                .navAddBtnBoxs{
+
+                    width:100%;
+
+                    button{
+
+                      width: 100%;
+                      padding:0px 14px;
+                      height: 48px;
+                      border-radius: 5px;
+                      text-align: left;
+                      color:$fontColor-85;
+                      font-weight: $fontWeight-500;
+                      font-size: $fontSize-15;
+                      letter-spacing: $letterSpace-2;
+                      background-image: transparent;
+                      -webkit-background-image: transparent;
+                      position: relative;
+                      border: 1px solid transparent;
+
+
+                      &:hover, &.active{
+                        background-image: linear-gradient(to right,#235576 0%, #313134 40% 100%);
+                        -webkit-background-image: linear-gradient(to right,#235576 0%, #313134 40% 100%);
+                        border: 1px solid #68686880;
+                        color:$fontColor-f;
+                      }
+          
+                      &:hover::before, &.active::before{
+                         
+                        content: "";
+                        width:calc(100% / 2.8);
+                        height:0.5px;
+                        position: absolute;
+                        top:0px;
+                        left:30%;
+                        background-image: linear-gradient(90deg, #494B4D 0%, #B7B7B7 52%, #4D4D4E 100%);
+                        -webkit-background-image: linear-gradient(90deg, #494B4D 0%, #B7B7B7 52%, #4D4D4E 100%);
+                      }
+
+                      &:hover::after, &.active::after{
+
+                        content: "";
+                        position: absolute;
+                        right:14px;
+                        width: 20px;
+                        height: 20px;
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        background-size: 20px 20px;
+                        background-image: url(/src/assets/media/nav/arrowDown.svg);
+                        -webkit-background-image: url(/src/assets/media/nav/arrowDown.svg);
+                        
+                        
+                      }
+
+                       span.iconBoxs{
+
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        background-size: 40px 40px;
+                        width:20px;
+                        height:20px;
+                        float:left;
+                        margin-right:8px;
+
+                         
+                        &.iconBoxs01{
+
+                           background-image: url(/src/assets/media/nav/navIcon01.svg);
+                           -webkit-background-image: url(/src/assets/media/nav/navIcon01.svg);
+                        }
+                          
+                        &.iconBoxs02{
+
+                           background-image: url(/src/assets/media/nav/navIcon02.svg);
+                           -webkit-background-image: url(/src/assets/media/nav/navIcon02.svg);
+                        }
+                          
+                        &.iconBoxs03{
+
+                           background-image: url(/src/assets/media/nav/navIcon03.svg);
+                           -webkit-background-image: url(/src/assets/media/nav/navIcon03.svg);
+                        }
+                        &.iconBoxs04{
+
+                           background-image: url(/src/assets/media/nav/navIcon04.svg);
+                           -webkit-background-image: url(/src/assets/media/nav/navIcon04.svg);
+                        }
+                        &.iconBoxs05{
+
+                           background-image: url(/src/assets/media/nav/navIcon05.svg);
+                           -webkit-background-image: url(/src/assets/media/nav/navIcon05.svg);
+                        }
+                        &.iconBoxs06{
+
+                           background-image: url(/src/assets/media/nav/navIcon06.svg);
+                           -webkit-background-image: url(/src/assets/media/nav/navIcon06.svg);
+                        }
+                       }
+
+                       &:hover span.iconBoxs,  &.active span.iconBoxs{
+                        filter: brightness(100);
+                        -webkit-filter: brightness(100);
+                       }
+                    }
+
+                    .subAddMenusWrapper{
+
+                      width: 100%;
+                      height:0px;
+                      opacity: 0;
+                      overflow-y: hidden;
+                      margin:0 auto;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+
+                      &.active{
+                         
+                         padding:20px 0px;
+                         height:auto;
+                         overflow-y: auto;
+                         opacity: 1;
+                         transition: opacity 800ms;
+                      }
+                      ul{
+
+                        width: 100%;
+
+                         li{
+
+                            a{
+
+                               width: calc(100% - 120px);
+                               padding:10px 60px;
+                               display: flex;
+                               color:$fontColor-85;
+                               font-weight: $fontWeight-400;
+                               font-size: $fontSize-13;
+                               letter-spacing: $letterSpace-2;
+                               position: relative;
+         
+                                 &::before{
+
+                                    position: absolute;
+                                    left:40px;
+                                    top:43%;
+                                    content: "";
+                                    width:4px;
+                                    height:4px;
+                                    border-radius: 50%;
+                                    background-color: #858585;
+
+                                 }
+                                 &:hover, &.active{ color:$fontColor-f;}
+                                 &:hover::before, &.active::before{
+                                    background-color:#1194E3; 
+                                    }
+                            }
+                         }
+                      }
+                    }
+                }
+            
+               }
+            }
+         }
+
+         .hiddenMenusBoxs{
+
+            width:calc(100% - 38px);
+            padding:15px 18px 13px 20px;
+            margin:0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-top: 1px solid rgba(106, 106, 106, 0.45);
+            
+
+            button{
+                width: 31px;
+                height: 31px;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: 1.5vw;
+                background-image: url(/src/assets/media/nav/addMenu.svg);
+                -webkit-background-image: url(/src/assets/media/nav/addMenu.svg);
+
+                p{
+                   color:#A4A4A4;
+                   font-size: $fontSize-14;
+                   font-weight: $fontWeight-400;       
+                   opacity: 0;  
+                  }
+
+                &.active{
+                   width: 100%;
+                   background-image: url(/src/assets/media/nav/closeMenu.svg);
+                   -webkit-background-image: url(/src/assets/media/nav/closeMenu.svg);
+                   background-position: right center;
+
+
+                   p{
+                  
+                     text-align: left;
+                     opacity: 1;
+                     transition: opacity 3s;
+                   }
+                }
+
+
+            }
+         }
+     }
+
+     @include breakpoint(xxxlarge) {
+      nav{
+         .menuWrappers{
+            .logoBoxs { background-size: 1vw;}
+            .menuBoxs{
+               ul{
+                  li.navBtnBoxs{
+                        button{
+                           &::before{ background-size:2vw;}
+                        }
+                        .subMenusWrapper {
+                           .subMenuBoxs {
+                              li{
+                                 .imgBoxs{ background-size: 1.5vw;}
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+            .hiddenMenusBoxs{
+               button{
+                  background-size: 1vw;
+               }
+            }
+         }
+
+     }
+     
+     @include breakpoint(large) {
+
+      nav{
+         .menuWrappers{
+            overflow-y: scroll;
+
+            &::-webkit-scrollbar{ display: none;}
+            &::-moz-scrollbar{ display: none;}
+
+            .menuBoxs{
+               ul{
+                  li.navBtnBoxs{
+                        width:38px;
+                        height:38px;
+                     }
+                  
+               }
+            }
+         }
+      }
+     }
+     @include breakpoint(medium) {
+
+      nav{
+         .menuWrappers{
+            .menuBoxs{
+               ul{
+                  li.navBtnBoxs{
+                        width:30px;
+                        height:30px;
+
+                        button{
+                           &::before{ background-size:3vw;}
+                        }
+
+                        .subMenusWrapper{
+                           .subMenuBoxs{
+                              li{
+                                 h3{ font-size: 1.4vw;}
+                                 .imgBoxs{ background-size: 3vw;}
+                                 a{font-size: 1.2vw;}
+                              }
+                           }
+                        }
+                     }
+                  
+               }
+            }
+            .addmenuBoxs {
+               ul{
+                 .navAddBtnBoxs{
+                    button{
+                       display: flex; align-items: center;
+                       font-size: 1.3vw;
+                       span{
+                          &.iconBoxs{
+                             background-size: 3vw;
+                          }
+                         } 
+                    }
+
+                    .subAddMenusWrapper{
+                      ul{
+                         li{
+                           a{ font-size: 1.2vw;}
+                         }
+                      }
+                    }
+                 }
+               }
+            }
+            .logoBoxs{
+               a{
+                  span{ font-size: 1.5vw;}
+               }
+            }
+
+         }
+
+         .hiddenMenusBoxs{
+            button{
+               p{font-size: 1.3vw;}
+            }
+         }
+      }
+     }
+}

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" /> -->
+   <link rel="stylesheet" href="/src/assets/css/style.css">
+   <title>S&S Cruiser</title>
+</head>
+<body>
+   <div class="navigationWrappers"></div>
+   <div class="headerWrappers"></div>
+   <div id="userManageWrappers">
+      <div class="userManageWrap resizeWidth">
+         <div class="userManageBoxs">
+            <section class="userManageSectionBoxs">
+               <div class="userManageSectionCont">
+                 <div class="userManageSectionContDevide">
+                   <ul class="selectContent sectionMenuListBoxs">
+                     <li class="selectTitle"><p>사용자 그룹</p></li>
+                     <!--숨겨진 셀렉박스-->
+                     <div class="userManageSelectWrappers">
+                       <select
+                         name=""
+                         id="userManageSelectBox01"
+                         hidden>
+                         <option value="전체">전체</option>
+                         <option value="전체1">전체1</option>
+                         <option value="전체2">전체2</option>
+                         <option value="전체3">전체3</option>
+                         <option value="전체4">전체4</option>
+                         <option value="전체5">전체5</option>
+                         <option value="전체6">전체6</option>
+           
+                       </select>
+                     </div>
+                     <!--보여지는 셀렉박스-->
+                     <div class="userManageSelects">
+                       <button class="userManageSelectsTitleBtn"></button>
+                       <div class="userManageSelectList">
+                         <ul class="userManageSelectListMember"></ul>
+                       </div>
+                     </div>
+                   </ul>
+                   <ul class="inputControlBoxs01 sectionMenuListBoxs">
+                     <li class="selectTitle"><p>사용자 그룹 ID</p></li>
+                     <div class="inputControlList">
+                       <input type="text" placeholder="ID를 입력해주세요"/>
+                     </div>
+                   </ul>
+                   <ul class="selectContent sectionMenuListBoxs">
+                     <li class="selectTitle"><p>사용 여부</p></li>
+                     <!--숨겨진 셀렉박스-->
+                     <div class="userManageSelectWrappers">
+                       <select
+                         name=""
+                         id="userManageSelectBox02"
+                         hidden>
+                         <option value="전체">전체</option>
+                         <option value="전체1">전체1</option>
+                         <option value="전체2">전체2</option>
+                         <option value="전체3">전체3</option>
+                         <option value="전체4">전체4</option>
+                         <option value="전체5">전체5</option>
+                         <option value="전체6">전체6</option>
+           
+                       </select>
+                     </div>
+                     <!--보여지는 셀렉박스-->
+                     <div class="userManageSelects">
+                       <button class="userManageSelectsTitleBtn"></button>
+                       <div class="userManageSelectList">
+                         <ul class="userManageSelectListMember"></ul>
+                       </div>
+                     </div>
+                   </ul>
+                   <ul class="inputControlBoxs02 sectionMenuListBoxs">
+                     <li class="selectTitle"><p>일자</p></li>
+                     <div class="inputControlList dateListBox">
+                       <button>전체2024.07.24</button>
+                     </div>
+                   </ul>
+                   <button class="searchBtn"><span>검색하기</span></button>
+                 </div>
+               </div>
+               <!--userManageSectionCont-->
+             </section>
+            <section class="userManageSectionBoxs">
+               <div class="userManageDataBoxs">
+                <div class="userManageDataBtnBoxs">
+                   <ul class="userManageDataBtnList">
+                     <li>
+                        <button type="button" class="userDataBtn01"><span></span>PDF</button>
+                        <button type="button" class="userDataBtn02"><span></span>CSV</button>
+                     </li>
+                     </ul>
+                      <ul class="userManageDataBtnList">
+                        <li>
+                            <button type="button" class="userDataBtn03 userPopOpenBtn"><span></span>사용자 그룹 등록</button>
+                            <button type="button" class="userDataBtn04 userHiddenBtn"><span></span></button>
+                        </li>
+                     </ul>
+                     <div class="userManageHiddenBoxs">
+                         <ul>
+                            <li><input type="checkbox" id="userManageCheck01"><label for="userManageCheck01"><span></span>첫번째 열</label></li>
+                            <li><input type="checkbox" id="userManageCheck02"><label for="userManageCheck02"><span></span>두번째 열</label></li>
+                            <li><input type="checkbox" id="userManageCheck03"><label for="userManageCheck03"><span></span>세번째 열</label></li>
+                            <li><input type="checkbox" id="userManageCheck04"><label for="userManageCheck04"><span></span>네번째 열</label></li>
+                         </ul>
+                     </div>
+                  </div>
+                  <div class="userManageDataCont">
+                      <h3>사용자 그룹 관리</h3>
+                      <div class="userManageDataWrap">
+                        <div class="scrollWrappers">
+                         <table>
+                              <thead>
+                                 <tr>
+                                  <th>그룹명<button></button></th>
+                                  <th>그룹 ID<button></button></th>
+                                  <th class="mediumWidth">그룹 설명</th>
+                                  <th class="largeWidth">그룹 인원 추이</th>
+                                  <th class="smallWidth">그룹 인원</th>
+                                  <th class="smallWidth">사용 여부</th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                   <tr>
+                                    <td><input type="checkbox" id="groupDatacheck01"><label for="groupDatacheck01">개발 그룹_2024 _01_2 개발팀</label></td>
+                                      <td>group-001</td>
+                                      <td>개발 관련 그룹 입니다.그룹 설명 영역입니다.개발 관련 그룹 입니다.그룹 설명 영역입니다.개발 관련 그룹 입니다.그룹 설명 영역입니다.</td>
+                                      <td class="imgBoxs"></td>
+                                      <td>10명</td>
+                                      <td>사용</td>
+                                   </tr>
+                                   <tr>
+                                    <td><input type="checkbox" id="groupDatacheck02"><label for="groupDatacheck02">관리그룹</label></td>
+                                      <td>group-002</td>
+                                      <td>관리 그룹 입니다.그룹 설명 영역입니다.</td>
+                                      <td class="imgBoxs"></td>
+                                      <td>10명</td>
+                                      <td>사용</td>
+                                   </tr>
+                                   <tr>
+                                    <td><input type="checkbox" id="groupDatacheck03"><label for="groupDatacheck03">관리그룹</label></td>
+                                      <td>group-002</td>
+                                      <td>관리 그룹 입니다.그룹 설명 영역입니다.</td>
+                                      <td class="imgBoxs"></td>
+                                      <td>10명</td>
+                                      <td>사용</td>
+                                   </tr>
+                                   <tr>
+                                    <td><input type="checkbox" id="groupDatacheck04"><label for="groupDatacheck04">관리그룹</label></td>
+                                      <td>group-002</td>
+                                      <td>관리 그룹 입니다.그룹 설명 영역입니다.</td>
+                                      <td class="imgBoxs"></td>
+                                      <td>10명</td>
+                                      <td>사용</td>
+                                   </tr>
+                                   <tr>
+                                    <td><input type="checkbox" id="groupDatacheck05"><label for="groupDatacheck05">관리그룹</label></td>
+                                      <td>group-002</td>
+                                      <td>관리 그룹 입니다.그룹 설명 영역입니다.</td>
+                                      <td class="imgBoxs"></td>
+                                      <td>10명</td>
+                                      <td>사용</td>
+                                   </tr>
+                                   <tr>
+                                    <td><input type="checkbox" id="groupDatacheck06"><label for="groupDatacheck06">관리그룹</label></td>
+                                      <td>group-002</td>
+                                      <td>관리 그룹 입니다.그룹 설명 영역입니다.</td>
+                                      <td class="imgBoxs"></td>
+                                      <td>10명</td>
+                                      <td>사용</td>
+                                   </tr>
+                                   <tr>
+                                    <td><input type="checkbox" id="groupDatacheck07"><label for="groupDatacheck07">관리그룹</label></td>
+                                      <td>group-002</td>
+                                      <td>관리 그룹 입니다.그룹 설명 영역입니다.</td>
+                                      <td class="imgBoxs"></td>
+                                      <td>10명</td>
+                                      <td>사용</td>
+                                   </tr>
+                                   <tr>
+                                    <td><input type="checkbox" id="groupDatacheck08"><label for="groupDatacheck08">관리그룹</label></td>
+                                      <td>group-002</td>
+                                      <td>관리 그룹 입니다.그룹 설명 영역입니다.</td>
+                                      <td class="imgBoxs"></td>
+                                      <td>10명</td>
+                                      <td>사용</td>
+                                   </tr>
+                                   <tr>
+                                    <td><input type="checkbox" id="groupDatacheck09"><label for="groupDatacheck09">관리그룹</label></td>
+                                      <td>group-002</td>
+                                      <td>관리 그룹 입니다.그룹 설명 영역입니다.</td>
+                                      <td class="imgBoxs"></td>
+                                      <td>10명</td>
+                                      <td>사용</td>
+                                   </tr>
+                              </tbody>
+                         </table>
+                         </div>
+                      </div>
+                  </div>
+               </div>
+            </section>
+            <div class="pageNationWrappers">
+               <div class="pageNationBoxs">
+                   <button class="pagePrev"></button>
+                   <div class="pageNatioNumbers">
+                       <span>1</span>
+                       <span>2</span>
+                       <span>3</span>
+                   </div>
+                   <button class="pageNext"></button>
+               </div>
+           </div>
+         </div><!--usermanageBoxs-->
+      </div>
+   </div>
+   <div id="userGroupAddWrappers"></div>
+   <div class="bottomMenuWrappers"></div>
+   <script type="module" src="/index.js"></script>
+   <script src="/src/js/pageNation.js"></script>
+   <script src="/src/js/userManage.js"></script>
+</body>
+</html>

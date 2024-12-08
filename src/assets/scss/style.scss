@@ -1,0 +1,94 @@
+* { margin:0; padding:0;}
+a { text-decoration: none; font-family: Pretendard;}
+ul li { list-style: none; }
+button { background-color: transparent; border: none; font-family: Pretendard; cursor: pointer;}
+div,h1,h2,h3,h4,h5,p,span{ margin:0; font-family: Pretendard;} 
+
+
+html, body { 
+    width: 100vw;
+    height: 100vh;
+    background-color: #111111; 
+    font-family: "Pretendard", sans-serif;
+  
+    &::-webkit-scrollbar{ display: none;}
+    &::-moz-scrollbar{ display: none;}
+
+}
+
+
+//scss 통합하는곳
+@import './abstracts/variables';
+@import 'header';
+@import 'navigation';
+@import 'main';
+@import 'bottomMenu';
+@import './components/login';
+@import './components/popUp/popup';
+@import './components/loading';
+@import './components/dashboard/switchDetails';
+@import './components/popUp/switchPop';
+@import './components/dashboard/issuesState';
+@import './components/dashboard/tools';
+@import './components/dashboard/copyState';
+@import './components/manage/userManage';
+@import './components/setup/edit';
+@import './components/setup/customizing';
+@import './components/popUp/userGroupPop';
+
+/* 공통 컨텐츠 font */
+@font-face {
+    font-family: "Pretendard";
+    font-style: normal;
+    src: url("../../font/pretendard/Pretendard-Thin.woff") format("woff");
+    font-weight: 100;
+  }
+  
+  @font-face {
+    font-family: "Pretendard";
+    font-style: normal;
+    src: url("../../font/pretendard/Pretendard-ExtraLight.woff") format("woff");
+    font-weight: 200;
+  }
+  
+  @font-face {
+    font-family: "Pretendard";
+    font-style: normal;
+    src: url("../../font/pretendard/Pretendard-Light.woff") format("woff");
+    font-weight: 300;
+  }
+  
+  @font-face {
+    font-family: "Pretendard";
+    font-style: normal;
+    src: url("../../font/pretendard/Pretendard-Regular.woff") format("woff");
+    font-weight: 400;
+  }
+  
+  @font-face {
+    font-family: "Pretendard";
+    font-style: normal;
+    src: url("../../font/pretendard/Pretendard-Medium.woff") format("woff");
+    font-weight: 500;
+  }
+  
+  @font-face {
+    font-family: "Pretendard";
+    font-style: normal;
+    src: url("../../font/pretendard/Pretendard-SemiBold.woff") format("woff");
+    font-weight: 600;
+  }
+  
+  @font-face {
+    font-family: "Pretendard";
+    font-style: normal;
+    src: url("../../font/pretendard/Pretendard-Bold.woff") format("woff");
+    font-weight: 700;
+  }
+  
+  @font-face {
+    font-family: "Pretendard";
+    font-style: normal;
+    src: url("../../font/pretendard/Pretendard-ExtraBold.woff") format("woff");
+    font-weight: 800;
+  }

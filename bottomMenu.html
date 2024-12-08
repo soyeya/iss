@@ -1,0 +1,54 @@
+<div class="bottomMenuWrap">
+    <div class="bottomMenuBoxs">
+        <ul class="bottonMenuList">
+          <li class="active"><span>장애현황</span><button type="button"></button></li>
+          <li><span>테마설정</span><button type="button"></button></li>
+          <li><span>대시보드 편집</span><button type="button"></button></li>
+          <li><span>프로필 설정</span><button type="button"></button></li>
+        </ul>
+        <div class="hiddenBottomWrap">
+          <button type="button" class="moreBtn"><i></i><i></i><i></i></button>
+          <div class="hiddenBottomMenu">
+            <ul>
+              <li><span>장애현황</span><button type="button"></button></li>
+              <li><span>테마설정</span><button type="button"></button></li>
+              <li><span>대시보드 편집</span><button type="button"></button></li>
+              <li><span>프로필 설정</span><button type="button"></button></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+</div>
+<script>
+
+  /* 더보기 클릭시 나타나는 메뉴*/
+   const moreBtn = document.querySelector(".bottomMenuWrap .moreBtn");
+   const hiddenBottomMenu = document.querySelector(".hiddenBottomMenu");
+
+   if(moreBtn){
+
+    moreBtn.addEventListener("click" , () => {
+
+      if(hiddenBottomMenu.classList.contains("active")){
+       return hiddenBottomMenu.classList.remove("active")
+      }
+      hiddenBottomMenu.classList.add("active");
+
+    })
+   }
+
+   /* 리스트클릭시 이벤트 */
+
+   const bottonMenuList = document.querySelectorAll(".bottonMenuList li");
+
+   if(bottonMenuList){
+    
+    bottonMenuList.forEach((list) => {
+       list.addEventListener("click" , () => {
+          bottonMenuList.forEach((otherlist) => { otherlist.classList.remove("active")});
+          list.classList.add("active");
+       })
+    })
+   }
+
+</script>

@@ -1,0 +1,32 @@
+<div class="popCommonWrap layoutSavePopWrap">
+   <div class="popCommonFlexBox">
+   <div class="popCommonBoxs saveCommonBoxs">
+      <ul>
+          <span class="popCommonImgBoxs saveCommonImg"></span>
+          <h5>레이아웃을 저장하시겠습니까?</h5>
+      </ul>
+      <div class="saveCommonBtnBoxs">
+      <button type="button" class="layoutSaveBtn">취소</button>
+      <button type="button" class="layoutSaveBtn">확인</button>
+     </div>
+   </div>
+</div>
+</div>
+<script>
+    
+   //확인,취소버튼 클릭시, 팝업 닫히게 하기
+   const layoutSaveBtns = document.querySelectorAll(".layoutSaveBtn");
+   const layoutSavePopWraps = document.querySelector(".layoutSavePopWrap");
+
+   if(layoutSaveBtns){
+
+      layoutSaveBtns.forEach((btn) => {
+         
+         btn.addEventListener("click", () => {
+
+            layoutSavePopWraps.classList.remove("active");
+         })
+
+      })
+   }
+</script>
