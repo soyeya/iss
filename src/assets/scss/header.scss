@@ -46,8 +46,8 @@ header{
                 position: absolute;
                 right:0px;
                 top:1px;
-                background-image: url(/src/assets/media/header/toArrow.svg);
-                -webkit-background-image: url(/src/assets/media/header/toArrow.svg);
+                background-image: url(/iss/src/assets/media/header/toArrow.svg);
+                -webkit-background-image: url(/iss/src/assets/media/header/toArrow.svg);
                 background-repeat: no-repeat;
                 background-position: right center;
                 background-size: 16px 16px;
@@ -84,8 +84,8 @@ header{
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        background-image: url(/src/assets/media/header/login.svg);
-                        -webkit-background-image: url(/src/assets/media/header/login.svg);
+                        background-image: url(/iss/src/assets/media/header/login.svg);
+                        -webkit-background-image: url(/iss/src/assets/media/header/login.svg);
                         background-repeat: no-repeat;
                         background-size: 22px 22px;
                         background-position: center center;
@@ -120,8 +120,8 @@ header{
                 align-items: center;
                 justify-content: center;
                 position: relative;
-                background-image: url(/src/assets/media/header/alarm.svg);
-                -webkit-background-image: url(/src/assets/media/header/alarm.svg);
+                background-image: url(/iss/src/assets/media/header/alarm.svg);
+                -webkit-background-image: url(/iss/src/assets/media/header/alarm.svg);
                 background-repeat: no-repeat;
                 background-size: contain;
                 background-position: center center;
@@ -151,8 +151,8 @@ header{
 
                .logOutBtns{
 
-                        background-image: url(/src/assets/media/header/logout.svg);
-                        -webkit-background-image: url(/src/assets/media/header/logout.svg);
+                        background-image: url(/iss/src/assets/media/header/logout.svg);
+                        -webkit-background-image: url(/iss/src/assets/media/header/logout.svg);
                         background-repeat: no-repeat;
                         background-size: 37px 37px;
                         background-position: center center;
@@ -187,8 +187,8 @@ header{
 
                 &.loginImg{
 
-                    background-image: url(/src/assets/media/header/userImg.svg);
-                    -webkit-background-image: url(/src/assets/media/header/userImg.svg);
+                    background-image: url(/iss/src/assets/media/header/userImg.svg);
+                    -webkit-background-image: url(/iss/src/assets/media/header/userImg.svg);
                     background-position: right center;
                     background-size: contain;
                     background-repeat: no-repeat;
@@ -273,8 +273,8 @@ header{
 
                 span{
 
-                    background-image: url(/src/assets/media/header/bell.svg);
-                    -webkit-background-image: url(/src/assets/media/header/bell.svg);
+                    background-image: url(/iss/src/assets/media/header/bell.svg);
+                    -webkit-background-image: url(/iss/src/assets/media/header/bell.svg);
                     background-repeat: no-repeat;
                     background-size: 11px 12px;
                     background-position: center center;
@@ -287,8 +287,8 @@ header{
             }
             button{
 
-                background-image: url(/src/assets/media/header/close.svg);
-                -webkit-background-image: url(/src/assets/media/header/close.svg);
+                background-image: url(/iss/src/assets/media/header/close.svg);
+                -webkit-background-image: url(/iss/src/assets/media/header/close.svg);
                 background-repeat: no-repeat;
                 background-size: 22px 22px;
                 background-position: center center;
@@ -338,16 +338,16 @@ header{
 
                   &:nth-child(1){
                       span{
-                        background-image: url(/src/assets/media/header/check.svg);
-                        -webkit-background-image: url(/src/assets/media/header/check.svg);
+                        background-image: url(/iss/src/assets/media/header/check.svg);
+                        -webkit-background-image: url(/iss/src/assets/media/header/check.svg);
                         background-size: 9px 6.28px;
                       }
                   }
 
                   &:nth-child(2){
                       span{
-                        background-image: url(/src/assets/media/header/delete.svg);
-                        -webkit-background-image: url(/src/assets/media/header/delete.svg);
+                        background-image: url(/iss/src/assets/media/header/delete.svg);
+                        -webkit-background-image: url(/iss/src/assets/media/header/delete.svg);
                         background-size: 12px;
                       }
                   }
@@ -463,8 +463,8 @@ header{
                                     position: absolute;
                                     left:0;
                                     top:0;
-                                    background-image: url(/src/assets/media/header/check.svg);
-                                    -webkit-background-image: url(/src/assets/media/header/check.svg);
+                                    background-image: url(/iss/src/assets/media/header/check.svg);
+                                    -webkit-background-image: url(/iss/src/assets/media/header/check.svg);
                                     background-repeat: no-repeat;
                                     background-size: 16px 10px;
                                     background-position: center center;
@@ -480,8 +480,8 @@ header{
 
                         width: 22px;
                         height: 22px;
-                        background-image: url(/src/assets/media/header/delete.svg);
-                        -webkit-background-image: url(/src/assets/media/header/delete.svg);
+                        background-image: url(/iss/src/assets/media/header/delete.svg);
+                        -webkit-background-image: url(/iss/src/assets/media/header/delete.svg);
                         background-repeat: no-repeat;
                         background-size: 22px 22px;
                         background-position: center center;
@@ -514,8 +514,8 @@ header{
 
                 width: 18px;
                 height: 18px;
-                background-image: url(/src/assets/media/header/moreBtn.svg);
-                -webkit-background-image: url(/src/assets/media/header/moreBtn.svg);
+                background-image: url(/iss/src/assets/media/header/moreBtn.svg);
+                -webkit-background-image: url(/iss/src/assets/media/header/moreBtn.svg);
                 background-repeat: no-repeat;
                 background-size: 18px 18px;
                 background-position: center center;

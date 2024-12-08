@@ -81,8 +81,8 @@
                background-size: 0.8vw;
                background-position: center center;
                background-repeat: no-repeat;
-               background-image: url(/src/assets/media/popUp/add.svg);
-               -webkit-background-image: url(/src/assets/media/popUp/add.svg);
+               background-image: url(/iss/src/assets/media/popUp/add.svg);
+               -webkit-background-image: url(/iss/src/assets/media/popUp/add.svg);
                margin-right: 8px;
                display: inline-block;
  
@@ -96,8 +96,8 @@
              background-size: 1.4vw;
              background-position: center center;
              background-repeat: no-repeat;
-             background-image: url(/src/assets/media/popUp/close.svg);
-             -webkit-background-image: url(/src/assets/media/popUp/close.svg);
+             background-image: url(/iss/src/assets/media/popUp/close.svg);
+             -webkit-background-image: url(/iss/src/assets/media/popUp/close.svg);
           }
         }
 
@@ -286,8 +286,8 @@
                         border-radius: 8px;
                         color:$fontColor-8e;
                         cursor: pointer;
-                        background-image: url(/src/assets/media/toolsImg/arrowDown.svg);
-                        -webkit-background-image: url(/src/assets/media/toolsImg/arrowDown.svg);
+                        background-image: url(/iss/src/assets/media/toolsImg/arrowDown.svg);
+                        -webkit-background-image: url(/iss/src/assets/media/toolsImg/arrowDown.svg);
                         background-size: 0.9vw;
                         background-position: 97% center;
                         background-repeat: no-repeat;
@@ -398,8 +398,8 @@
                    i{
                      width: 18px;
                      height: 18px;
-                     background-image: url(/src/assets/media/popUp/arrowDown.svg);
-                     -webkit-background-image: url(/src/assets/media/popUp/arrowDown.svg);
+                     background-image: url(/iss/src/assets/media/popUp/arrowDown.svg);
+                     -webkit-background-image: url(/iss/src/assets/media/popUp/arrowDown.svg);
                      background-size: 0.8vw;
                      background-position: center center;
                      background-repeat: no-repeat;
@@ -419,8 +419,8 @@
                      width: 15px;
                      height: 15px;
                      display: inline-block;
-                     background-image: url(/src/assets/media/popUp/hidden.svg);
-                     -webkit-background-image: url(/src/assets/media/popUp/hidden.svg);
+                     background-image: url(/iss/src/assets/media/popUp/hidden.svg);
+                     -webkit-background-image: url(/iss/src/assets/media/popUp/hidden.svg);
                      background-size: 0.8vw;
                      background-position: center center;
                      background-repeat: no-repeat;
@@ -591,8 +591,8 @@
 
                            width: 17px;
                            height: 17px;
-                           background-image: url(/src/assets/media/popUp/deleted.svg);
-                           -webkit-background-image: url(/src/assets/media/popUp/deleted.svg);
+                           background-image: url(/iss/src/assets/media/popUp/deleted.svg);
+                           -webkit-background-image: url(/iss/src/assets/media/popUp/deleted.svg);
                            background-size: 1vw;
                            background-position: center center;
                            background-repeat: no-repeat;
@@ -616,8 +616,8 @@
 
                           width: 20px;
                           height: 20px;
-                          background-image: url(/src/assets/media/popUp/slideBtn.svg);
-                          -webkit-background-image: url(/src/assets/media/popUp/slideBtn.svg);
+                          background-image: url(/iss/src/assets/media/popUp/slideBtn.svg);
+                          -webkit-background-image: url(/iss/src/assets/media/popUp/slideBtn.svg);
                           background-size: 1rem;
                           background-position: center center;
                           background-repeat: no-repeat;
@@ -687,13 +687,13 @@
                      
                         &:nth-child(1){
 
-                           background-image: url(/src/assets/media/popUp/plus.svg);
-                           -webkit-background-image: url(/src/assets/media/popUp/plus.svg);
+                           background-image: url(/iss/src/assets/media/popUp/plus.svg);
+                           -webkit-background-image: url(/iss/src/assets/media/popUp/plus.svg);
                         }
                         &:nth-child(2){
 
-                           background-image: url(/src/assets/media/popUp/minus.svg);
-                           -webkit-background-image: url(/src/assets/media/popUp/minus.svg);
+                           background-image: url(/iss/src/assets/media/popUp/minus.svg);
+                           -webkit-background-image: url(/iss/src/assets/media/popUp/minus.svg);
                         }
 
 
@@ -734,8 +734,8 @@
                            background-size: 0.8vw;
                            background-position: center center;
                            background-repeat: no-repeat;
-                           background-image: url(/src/assets/media/popUp/group.svg);
-                           -webkit-background-image: url(/src/assets/media/popUp/group.svg);
+                           background-image: url(/iss/src/assets/media/popUp/group.svg);
+                           -webkit-background-image: url(/iss/src/assets/media/popUp/group.svg);
                            margin-right: 6px;
                            display: inline-block;
              
@@ -828,8 +828,8 @@
                                  background-size: 1.5vh;
                                  background-position: center center;
                                  background-repeat: no-repeat;
-                                 background-image: url(/src/assets/media/popUp/deleted.svg);
-                                -webkit-background-image: url(/src/assets/media/popUp/deleted.svg);
+                                 background-image: url(/iss/src/assets/media/popUp/deleted.svg);
+                                -webkit-background-image: url(/iss/src/assets/media/popUp/deleted.svg);
                                   
                                }
 
@@ -877,19 +877,19 @@
                      background-size: 0.8vw;
                      background-position: right 10px center;
                      background-repeat: no-repeat;
-                     background-image: url(/src/assets/media/popUp/slideBtnDown.svg);
-                    -webkit-background-image: url(/src/assets/media/popUp/slideBtnDown.svg);
+                     background-image: url(/iss/src/assets/media/popUp/slideBtnDown.svg);
+                    -webkit-background-image: url(/iss/src/assets/media/popUp/slideBtnDown.svg);
 
                     &.groupSelectBoxBtn {
                      &.active{
                         border: 1px solid #0BA7FE;
-                        background-image: url(/src/assets/media/popUp/slideBtnUp.svg);
-                        -webkit-background-image: url(/src/assets/media/popUp/slideBtnUp.svg);
+                        background-image: url(/iss/src/assets/media/popUp/slideBtnUp.svg);
+                        -webkit-background-image: url(/iss/src/assets/media/popUp/slideBtnUp.svg);
 
                         span{
                            color:$fontColor-f;
-                           background-image: url(/src/assets/media/popUp/groupWhite.svg);
-                           -webkit-background-image: url(/src/assets/media/popUp/groupWhite.svg);
+                           background-image: url(/iss/src/assets/media/popUp/groupWhite.svg);
+                           -webkit-background-image: url(/iss/src/assets/media/popUp/groupWhite.svg);
 
                         }
                      }
@@ -916,8 +916,8 @@
                         background-size: 0.7vw;
                         background-position: left bottom 6px;
                         background-repeat: no-repeat;
-                        background-image: url(/src/assets/media/popUp/groupGray.svg);
-                       -webkit-background-image: url(/src/assets/media/popUp/groupGray.svg);
+                        background-image: url(/iss/src/assets/media/popUp/groupGray.svg);
+                       -webkit-background-image: url(/iss/src/assets/media/popUp/groupGray.svg);
                         
 
                      }
@@ -934,8 +934,8 @@
                background-size:contain;
                background-position: 10% top;
                background-repeat: no-repeat;
-               background-image: url(/src/assets/media/popUp/dashBack.svg);
-              -webkit-background-image: url(/src/assets/media/popUp/dashBack.svg);
+               background-image: url(/iss/src/assets/media/popUp/dashBack.svg);
+              -webkit-background-image: url(/iss/src/assets/media/popUp/dashBack.svg);
 
                &.active{ 
 
@@ -981,8 +981,8 @@
                      border: 1px solid #686868;
                      color:$fontColor-8e;
                      cursor: pointer;
-                     background-image: url(/src/assets/media/popUp/slideBtnDown.svg);
-                     -webkit-background-image: url(/src/assets/media/popUp/slideBtnDown.svg);
+                     background-image: url(/iss/src/assets/media/popUp/slideBtnDown.svg);
+                     -webkit-background-image: url(/iss/src/assets/media/popUp/slideBtnDown.svg);
                      background-size: 0.8vw;
                      background-position: 95% center;
                      background-repeat: no-repeat;
@@ -990,8 +990,8 @@
                      &.active{
                         color:$fontColor-f;
                         border: 1px solid #0BA7FE;
-                        background-image: url(/src/assets/media/popUp/slideBtnUp.svg);
-                        -webkit-background-image: url(/src/assets/media/popUp/slideBtnUp.svg);
+                        background-image: url(/iss/src/assets/media/popUp/slideBtnUp.svg);
+                        -webkit-background-image: url(/iss/src/assets/media/popUp/slideBtnUp.svg);
 
                         span{
                            color:$fontColor-f;
@@ -1094,8 +1094,8 @@
                         background-color:#D9D9D917;
                         height:26px;
                         padding:0px 14px;
-                        background-image: url(/src/assets/media/toolsImg/arrowDown.svg);
-                        -webkit-background-image: url(/src/assets/media/toolsImg/arrowDown.svg);
+                        background-image: url(/iss/src/assets/media/toolsImg/arrowDown.svg);
+                        -webkit-background-image: url(/iss/src/assets/media/toolsImg/arrowDown.svg);
                         background-size: 0.8vw;
                         background-position: 95% center;
                         background-repeat: no-repeat;
@@ -1186,8 +1186,8 @@
                background-size: 0.8vw;
                background-position: center center;
                background-repeat: no-repeat;
-               background-image: url(/src/assets/media/popUp/searchBtn.svg);
-               -webkit-background-image: url(/src/assets/media/popUp/searchBtn.svg);
+               background-image: url(/iss/src/assets/media/popUp/searchBtn.svg);
+               -webkit-background-image: url(/iss/src/assets/media/popUp/searchBtn.svg);
 
                }
          }

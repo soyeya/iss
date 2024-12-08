@@ -3,8 +3,8 @@
     width: 100%;
     height:100%;
     margin:0 auto;
-    background-image: url(/src/assets/media/login/loginBackground.svg);
-    -webkit-background-image: url(/src/assets/media/login/loginBackground.svg);
+    background-image: url(/iss/src/assets/media/login/loginBackground.svg);
+    -webkit-background-image: url(/iss/src/assets/media/login/loginBackground.svg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -14,8 +14,8 @@
     &::after{
 
       content: "";
-      background-image: url(/src/assets/media/dottedBack.svg);
-      -webkit-background-image: url(/src/assets/media/dottedBack.svg);
+      background-image: url(/iss/src/assets/media/dottedBack.svg);
+      -webkit-background-image: url(/iss/src/assets/media/dottedBack.svg);
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;
@@ -86,8 +86,8 @@
 
                width:85px;
                height:99px;
-               background-image: url(/src/assets/media/commonLogo.svg);
-               -webkit-background-image: url(/src/assets/media/commonLogo.svg);
+               background-image: url(/iss/src/assets/media/commonLogo.svg);
+               -webkit-background-image: url(/iss/src/assets/media/commonLogo.svg);
                background-position: center center;
                background-size: contain;
                background-repeat: no-repeat;
@@ -170,16 +170,16 @@
                       }
 
                       input[type="text"]{
-                        background-image: url(/src/assets/media/login/id.svg);
-                        -webkit-background-image: url(/src/assets/media/login/id.svg);
+                        background-image: url(/iss/src/assets/media/login/id.svg);
+                        -webkit-background-image: url(/iss/src/assets/media/login/id.svg);
                      }
                       input[type="password"]{
-                        background-image: url(/src/assets/media/login/password.svg);
-                        -webkit-background-image: url(/src/assets/media/login/password.svg);
+                        background-image: url(/iss/src/assets/media/login/password.svg);
+                        -webkit-background-image: url(/iss/src/assets/media/login/password.svg);
                      }
                       input[type="email"]{
-                        background-image: url(/src/assets/media/login/email.svg);
-                        -webkit-background-image: url(/src/assets/media/login/email.svg);
+                        background-image: url(/iss/src/assets/media/login/email.svg);
+                        -webkit-background-image: url(/iss/src/assets/media/login/email.svg);
                      }
                   }
                 }
@@ -200,8 +200,8 @@
                   &::before{
 
                       content: "";
-                      background-image: url(/src/assets/media/login/findPassword.svg);
-                      -webkit-background-image: url(/src/assets/media/login/findPassword.svg);
+                      background-image: url(/iss/src/assets/media/login/findPassword.svg);
+                      -webkit-background-image: url(/iss/src/assets/media/login/findPassword.svg);
                       background-position: left center;
                       background-size: 10px 10px;
                       background-repeat: no-repeat;

@@ -168,12 +168,12 @@
                            margin-right:5px;
 
                            &.whitetheme{
-                              background-image: url(/src/assets/media/customizing/white.svg);
-                              -webkit-background-image: url(/src/assets/media/customizing/white.svg);
+                              background-image: url(/iss/src/assets/media/customizing/white.svg);
+                              -webkit-background-image: url(/iss/src/assets/media/customizing/white.svg);
                            }
                            &.blacktheme{
-                              background-image: url(/src/assets/media/customizing/black.svg);
-                              -webkit-background-image: url(/src/assets/media/customizing/black.svg);
+                              background-image: url(/iss/src/assets/media/customizing/black.svg);
+                              -webkit-background-image: url(/iss/src/assets/media/customizing/black.svg);
                            }
                         }
                       }
@@ -215,12 +215,12 @@
                      background-size: cover;
 
                      &.blackTheme{
-                        background-image: url(/src/assets/media/customizing/blackBack.svg);
-                        -webkit-background-image: url(/src/assets/media/customizing/blackBack.svg);
+                        background-image: url(/iss/src/assets/media/customizing/blackBack.svg);
+                        -webkit-background-image: url(/iss/src/assets/media/customizing/blackBack.svg);
                      }
                      &.whiteTheme{
-                        background-image: url(/src/assets/media/customizing/whiteBack.svg);
-                        -webkit-background-image: url(/src/assets/media/customizing/whiteBack.svg);
+                        background-image: url(/iss/src/assets/media/customizing/whiteBack.svg);
+                        -webkit-background-image: url(/iss/src/assets/media/customizing/whiteBack.svg);
                      }
                   
                   }
@@ -280,14 +280,14 @@
                         background-size: 18px;
                         background-position: center center;
                         background-repeat: no-repeat;
-                        background-image: url(/src/assets/media/customizing/arrowDown.svg);
-                        -webkit-background-image: url(/src/assets/media/customizing/arrowDown.svg);
+                        background-image: url(/iss/src/assets/media/customizing/arrowDown.svg);
+                        -webkit-background-image: url(/iss/src/assets/media/customizing/arrowDown.svg);
                         position: relative;
                         z-index: 9999;
 
                         &.active{
-                           background-image: url(/src/assets/media/customizing/arrowUp.svg);
-                           -webkit-background-image: url(/src/assets/media/customizing/arrowUp.svg);
+                           background-image: url(/iss/src/assets/media/customizing/arrowUp.svg);
+                           -webkit-background-image: url(/iss/src/assets/media/customizing/arrowUp.svg);
                         }
                      }
                   }

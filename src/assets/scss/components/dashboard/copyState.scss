@@ -35,8 +35,8 @@ body{
             position: absolute;
             top:0;
             left:0;
-            background-image: url(/src/assets/media/dottedBack.svg);
-            -webkit-background-image: url(/src/assets/media/dottedBack.svg);
+            background-image: url(/iss/src/assets/media/dottedBack.svg);
+            -webkit-background-image: url(/iss/src/assets/media/dottedBack.svg);
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -191,12 +191,12 @@ body{
                }
 
                &.stor-blue::before{ 
-                  background-image: url(/src/assets/media/copyState/stor-blue.svg);
-                  -webkit-background-image: url(/src/assets/media/copyState/stor-blue.svg);
+                  background-image: url(/iss/src/assets/media/copyState/stor-blue.svg);
+                  -webkit-background-image: url(/iss/src/assets/media/copyState/stor-blue.svg);
                }
                &.stor-green::before{ 
-                  background-image: url(/src/assets/media/copyState/stor-green.svg);
-                  -webkit-background-image: url(/src/assets/media/copyState/stor-green.svg);
+                  background-image: url(/iss/src/assets/media/copyState/stor-green.svg);
+                  -webkit-background-image: url(/iss/src/assets/media/copyState/stor-green.svg);
                }
 
                }
@@ -442,12 +442,12 @@ body{
               }
 
               &:nth-child(1)::after{
-               background-image: url(/src/assets/media/toolsImg/plus.svg);
-               -webkit-background-image: url(/src/assets/media/toolsImg/plus.svg);
+               background-image: url(/iss/src/assets/media/toolsImg/plus.svg);
+               -webkit-background-image: url(/iss/src/assets/media/toolsImg/plus.svg);
               }
               &:nth-child(2)::after{
-               background-image: url(/src/assets/media/toolsImg/minus.svg);
-               -webkit-background-image: url(/src/assets/media/toolsImg/minus.svg);
+               background-image: url(/iss/src/assets/media/toolsImg/minus.svg);
+               -webkit-background-image: url(/iss/src/assets/media/toolsImg/minus.svg);
               }
 
            }
@@ -489,13 +489,13 @@ body{
                   background-position: center center;
                   background-repeat: no-repeat;
                   background-size: 12px 12px;
-                  background-image: url(/src/assets/media/copyState/openMenu.svg);
-                  -webkit-background-image: url(/src/assets/media/copyState/openMenu.svg);
+                  background-image: url(/iss/src/assets/media/copyState/openMenu.svg);
+                  -webkit-background-image: url(/iss/src/assets/media/copyState/openMenu.svg);
                }
 
                &.active::after{
-                  background-image: url(/src/assets/media/copyState/closeMenu.svg);
-                  -webkit-background-image: url(/src/assets/media/copyState/closeMenu.svg);
+                  background-image: url(/iss/src/assets/media/copyState/closeMenu.svg);
+                  -webkit-background-image: url(/iss/src/assets/media/copyState/closeMenu.svg);
                }
              }
           }
