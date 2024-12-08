@@ -1,9 +1,9 @@
 /* Error: Undefined variable.
  *    ,
- * 46 |             background-image:$border-linear;
+ * 47 |             background-image:$border-linear;
  *    |                              ^^^^^^^^^^^^^^
  *    '
- *   src/assets/scss/components/popUp/switchPop.scss 46:30  root stylesheet */
+ *   src/assets/scss/components/popUp/switchPop.scss 47:30  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 46 \2502              background-image:$border-linear;\a    \2502                               ^^^^^^^^^^^^^^\a    \2575 \a   src/assets/scss/components/popUp/switchPop.scss 46:30  root stylesheet";
+  content: "Error: Undefined variable.\a    \2577 \a 47 \2502              background-image:$border-linear;\a    \2502                               ^^^^^^^^^^^^^^\a    \2575 \a   src/assets/scss/components/popUp/switchPop.scss 47:30  root stylesheet";
 }
